@@ -1,0 +1,394 @@
+# Finnish translation of Concentration Calculator Plasma Applet.
+# Copyright © 2011 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kdeedu package.
+# Matti Simoska <matti.simoska@gmail.com>, 2011.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2012.
+#
+# KDE Finnish translation sprint participants:
+# Author: Lliehu
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_concentrationCalculator\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:01+0200\n"
+"PO-Revision-Date: 2013-01-20 20:03:20+0000\n"
+"Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
+"Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-POT-Import-Date: 2012-12-01 22:23:52+0000\n"
+"X-Generator: MediaWiki 1.21alpha (963ddae); Translate 2012-11-08\n"
+
+#: concentrationCalculator.cpp:96
+#, kde-format
+msgid "Concentration Calculator"
+msgstr "Konsentraatiolaskin"
+
+#: concentrationCalculator.cpp:111
+#, kde-format
+msgid "Calculation Mode:"
+msgstr "Laskentatapa:"
+
+#: concentrationCalculator.cpp:117
+#, kde-format
+msgid "Amount Solute"
+msgstr "Liuosaineen määrä"
+
+#: concentrationCalculator.cpp:118
+#, kde-format
+msgid "Molar Mass of Solute"
+msgstr "Liuosaineen moolimassa"
+
+#: concentrationCalculator.cpp:119
+#, kde-format
+msgid "Equivalent Mass"
+msgstr "Ekvivalenttimassa"
+
+#: concentrationCalculator.cpp:120
+#, kde-format
+msgid "Amount Solvent"
+msgstr "Liuotinaineen määrä"
+
+#: concentrationCalculator.cpp:121
+#, kde-format
+msgid "Molar Mass of Solvent"
+msgstr "Liuotinaineen moolimassa"
+
+#: concentrationCalculator.cpp:122
+#, kde-format
+msgid "Concentration"
+msgstr "Konsentraatio"
+
+#: concentrationCalculator.cpp:131
+#, kde-format
+msgid "Amount of solute:"
+msgstr "Liuosaineen määrä:"
+
+#: concentrationCalculator.cpp:141 concentrationCalculator.cpp:241
+#, kde-format
+msgid "Mass"
+msgstr "Massa"
+
+#: concentrationCalculator.cpp:142 concentrationCalculator.cpp:240
+#, kde-format
+msgid "volume"
+msgstr "tilavuus"
+
+#: concentrationCalculator.cpp:143 concentrationCalculator.cpp:242
+#, kde-format
+msgid "moles"
+msgstr "moolia"
+
+#: concentrationCalculator.cpp:149 concentrationCalculator.cpp:1026
+#: concentrationCalculator.cpp:1093
+#, kde-format
+msgid "grams"
+msgstr "grammaa"
+
+#: concentrationCalculator.cpp:150 concentrationCalculator.cpp:1027
+#: concentrationCalculator.cpp:1094
+#, kde-format
+msgid "tons"
+msgstr "tonnia"
+
+#: concentrationCalculator.cpp:151 concentrationCalculator.cpp:1028
+#: concentrationCalculator.cpp:1095
+#, kde-format
+msgid "carats"
+msgstr "karaattia"
+
+#: concentrationCalculator.cpp:152 concentrationCalculator.cpp:1029
+#: concentrationCalculator.cpp:1096
+#, kde-format
+msgid "pounds"
+msgstr "paunaa"
+
+#: concentrationCalculator.cpp:153 concentrationCalculator.cpp:1030
+#: concentrationCalculator.cpp:1097
+#, kde-format
+msgid "ounces"
+msgstr "unssia"
+
+#: concentrationCalculator.cpp:154 concentrationCalculator.cpp:1031
+#: concentrationCalculator.cpp:1098
+#, kde-format
+msgid "troy ounces"
+msgstr "troy-unssia"
+
+#: concentrationCalculator.cpp:165
+#, kde-format
+msgid "Molar mass of solute:"
+msgstr "Liuosaineen moolimassa:"
+
+#: concentrationCalculator.cpp:174 concentrationCalculator.cpp:193
+#: concentrationCalculator.cpp:278
+#, kde-format
+msgid "u (mass)"
+msgstr "atomimassayksikkö"
+
+#: concentrationCalculator.cpp:183
+#, kde-format
+msgid "Equivalent mass of solute:"
+msgstr "Liuosaineen ekvivalenttimassa:"
+
+#: concentrationCalculator.cpp:203
+#, kde-format
+msgid "Density of solute:"
+msgstr "Liuosaineen tiheys:"
+
+#: concentrationCalculator.cpp:213 concentrationCalculator.cpp:298
+#, kde-format
+msgid "grams per liter"
+msgstr "grammaa/litra"
+
+#: concentrationCalculator.cpp:214 concentrationCalculator.cpp:299
+#, kde-format
+msgid "grams per milliliter"
+msgstr "grammaa/millilitra"
+
+#: concentrationCalculator.cpp:215 concentrationCalculator.cpp:300
+#, kde-format
+msgid "kilograms per cubic meter"
+msgstr "kilogrammaa/kuutiometri"
+
+#: concentrationCalculator.cpp:216 concentrationCalculator.cpp:301
+#, kde-format
+msgid "kilograms per liter"
+msgstr "kilogrammaa/litra"
+
+#: concentrationCalculator.cpp:217 concentrationCalculator.cpp:302
+#, kde-format
+msgid "ounces per cubic inch"
+msgstr "unssia/kuutiotuuma"
+
+#: concentrationCalculator.cpp:218 concentrationCalculator.cpp:303
+#, kde-format
+msgid "ounces per cubic foot"
+msgstr "unssia/kuutiojalka"
+
+#: concentrationCalculator.cpp:219 concentrationCalculator.cpp:304
+#, kde-format
+msgid "pounds per cubic inch"
+msgstr "paunaa/kuutiotuuma"
+
+#: concentrationCalculator.cpp:220 concentrationCalculator.cpp:305
+#, kde-format
+msgid "pounds per cubic foot"
+msgstr "paunaa/kuutiojalka"
+
+#: concentrationCalculator.cpp:221 concentrationCalculator.cpp:306
+#, kde-format
+msgid "pounds per cubic yard"
+msgstr "paunaa/kuutiojaardi"
+
+#: concentrationCalculator.cpp:230
+#, kde-format
+msgid "Amount of solvent:"
+msgstr "Liuotinaineen ainemäärä:"
+
+#: concentrationCalculator.cpp:249 concentrationCalculator.cpp:1038
+#: concentrationCalculator.cpp:1078
+#, kde-format
+msgid "liter"
+msgstr "litra"
+
+#: concentrationCalculator.cpp:250 concentrationCalculator.cpp:1039
+#: concentrationCalculator.cpp:1079
+#, kde-format
+msgid "cubic meters"
+msgstr "kuutiometriä"
+
+#: concentrationCalculator.cpp:251 concentrationCalculator.cpp:1040
+#: concentrationCalculator.cpp:1080
+#, kde-format
+msgid "cubic feet"
+msgstr "kuutiojalkaa"
+
+#: concentrationCalculator.cpp:252 concentrationCalculator.cpp:1041
+#: concentrationCalculator.cpp:1081
+#, kde-format
+msgid "cubic inch"
+msgstr "kuutiotuuma"
+
+#: concentrationCalculator.cpp:253 concentrationCalculator.cpp:1042
+#: concentrationCalculator.cpp:1082
+#, kde-format
+msgid "cubic mile"
+msgstr "kuutiomaili"
+
+#: concentrationCalculator.cpp:254 concentrationCalculator.cpp:1043
+#: concentrationCalculator.cpp:1083
+#, kde-format
+msgid "fluid ounce"
+msgstr "nesteunssi"
+
+#: concentrationCalculator.cpp:255 concentrationCalculator.cpp:1044
+#: concentrationCalculator.cpp:1084
+#, kde-format
+msgid "cups"
+msgstr "kuppia"
+
+#: concentrationCalculator.cpp:256 concentrationCalculator.cpp:1045
+#: concentrationCalculator.cpp:1085
+#, kde-format
+msgid "gallons"
+msgstr "gallonaa"
+
+#: concentrationCalculator.cpp:257 concentrationCalculator.cpp:1046
+#: concentrationCalculator.cpp:1086
+#, kde-format
+msgid "pints"
+msgstr "pinttiä"
+
+#: concentrationCalculator.cpp:269
+#, kde-format
+msgid "Molar mass of solvent:"
+msgstr "Liuotinaineen ainemäärä:"
+
+#: concentrationCalculator.cpp:288
+#, kde-format
+msgid "Density of solvent:"
+msgstr "Liuotinaineen tiheys:"
+
+#: concentrationCalculator.cpp:317
+#, kde-format
+msgid "Concentration:"
+msgstr "Konsentraatio:"
+
+#: concentrationCalculator.cpp:327
+#, kde-format
+msgid "molar"
+msgstr "molaarinen"
+
+#: concentrationCalculator.cpp:328
+#, kde-format
+msgid "Normal"
+msgstr "Normaali"
+
+#: concentrationCalculator.cpp:329
+#, kde-format
+msgid "molal"
+msgstr "molaalisuus"
+
+#: concentrationCalculator.cpp:330
+#, kde-format
+msgid "% ( mass )"
+msgstr "massaprosenttia"
+
+#: concentrationCalculator.cpp:331
+#, kde-format
+msgid "% ( volume )"
+msgstr "tilavuusprosenttia"
+
+#: concentrationCalculator.cpp:332
+#, kde-format
+msgid "% ( moles )"
+msgstr "mooliosuus"
+
+#: concentrationCalculator.cpp:341
+#, kde-format
+msgid "Reset"
+msgstr "Nollaa"
+
+#: concentrationCalculator.cpp:1232
+#, kde-format
+msgid "Percentage should be less than 100.0, please enter a valid value."
+msgstr ""
+"Prosenttiosuuden pitäisi olla vähemmän kuin 100,0. Syötä kelvollinen arvo."
+
+#: concentrationCalculator.cpp:1235
+#, kde-format
+msgid "Density cannot be zero, please enter a valid value."
+msgstr "Tiheys ei voi olla nolla. Syötä kelvollinen arvo."
+
+#: concentrationCalculator.cpp:1238
+#, kde-format
+msgid "Mass cannot be zero, please enter a valid value."
+msgstr "Massa ei voi olla nolla. Syötä kelvollinen arvo."
+
+#: concentrationCalculator.cpp:1241
+#, kde-format
+msgid "Volume cannot be zero, please enter a valid value."
+msgstr "Tilavuus ei voi olla nolla. Syötä kelvollinen arvo."
+
+#: concentrationCalculator.cpp:1244
+#, kde-format
+msgid "Number of moles cannot be zero, please enter a valid value."
+msgstr "Ainemäärä ei voi olla nolla. Syötä kelvollinen arvo."
+
+#: concentrationCalculator.cpp:1247
+#, kde-format
+msgid "Molar mass of solvent is zero, please enter a valid value."
+msgstr "Liuottimen moolimassa ei voi olla nolla. Syötä kelvollinen arvo."
+
+#: concentrationCalculator.cpp:1250
+#, kde-format
+msgid "Number of equivalents is zero - cannot calculate equivalent mass."
+msgstr "Ekvivalenttien määrä on nolla - ekvivalenttimassaa ei voida laskea."
+
+#: concentrationCalculator.cpp:1253
+#, kde-format
+msgid "Concentration is zero, please enter a valid value."
+msgstr "Konsentraatio on nolla. Syötä kelvollinen arvo."
+
+#: concentrationCalculator.cpp:1256
+#, kde-format
+msgid ""
+"Insufficient data to calculate the required value, please specify normality."
+msgstr ""
+"Annetut tiedot eivät riitä vaaditun arvon laskemiseen, määritä normaalisuus."
+
+#: concentrationCalculator.cpp:1259
+#, kde-format
+msgid ""
+"Insufficient data, please specify molarity / mole fraction / molality to "
+"calculate."
+msgstr ""
+"Riittämättömästi tietoja, määritä laskemista varten molaarisuus / "
+"mooliosuus / molaalisuus."
+
+#: concentrationCalculator.cpp:1262
+#, kde-format
+msgid ""
+"Amount is specified in moles, cannot calculate molar/equivalent masses. "
+"Please specify mass/volume."
+msgstr ""
+"Määrä ilmoitettu mooleina, ei voida laskea mooli-/ekvivalenttimassaa. "
+"Määrittele massa/tilavuus."
+
+#: concentrationCalculator.cpp:1265
+#, kde-format
+msgid ""
+"You can only calculate the molar mass of a solvent if the mole fraction is "
+"specified."
+msgstr "Voit laskea liuottimen moolimassan vain, jos mooliosuus on määritelty."
+
+#: concentrationCalculator.cpp:1268
+#, kde-format
+msgid "Molar mass cannot be zero, please enter a valid value."
+msgstr "Moolimassa ei voi olla nolla. Syötä kelvollinen arvo."
+
+#: concentrationCalculator.cpp:1271
+#, kde-format
+msgid "Equivalent mass cannot be zero, please enter a valid value."
+msgstr "Ekvivalenttimassa ei voi olla nolla. Syötä kelvollinen arvo."
+
+#: concentrationCalculator.cpp:1282
+#, kde-format
+msgid "General"
+msgstr "Yleiset"
+
+#. i18n: ectx: property (text), widget (QCheckBox, soluteMass)
+#: concentrationCalculatorConfig.ui:17
+#, kde-format
+msgid "Amount of solute is always specified in terms of mass"
+msgstr "Liuosaineen määrä täytyy ilmoittaa massana"
+
+#. i18n: ectx: property (text), widget (QCheckBox, solventVolume)
+#: concentrationCalculatorConfig.ui:24
+#, kde-format
+msgid "Amount of solvent is always specified in terms of volume"
+msgstr "Liuotinaineen määrä täytyy ilmoittaa tilavuutena"

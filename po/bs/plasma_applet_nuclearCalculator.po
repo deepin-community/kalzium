@@ -1,0 +1,187 @@
+# Bosnian translation for kdeedu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the kdeedu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeedu\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:01+0200\n"
+"PO-Revision-Date: 2015-02-04 15:58+0000\n"
+"Last-Translator: Samir Ribić <Unknown>\n"
+"Language-Team: Bosnian <bs@li.org>\n"
+"Language: bs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-02-05 06:36+0000\n"
+"X-Generator: Launchpad (build 17331)\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: nuclearCalculator.cpp:143
+#, kde-format
+msgid "Nuclear Calculator"
+msgstr "Nuklearni kalkulator"
+
+#: nuclearCalculator.cpp:158
+#, kde-format
+msgid "Element name:"
+msgstr "Ime elementa:"
+
+#: nuclearCalculator.cpp:161
+#, kde-format
+msgid "Isotope mass:"
+msgstr "Masa izotopa:"
+
+#: nuclearCalculator.cpp:164
+#, kde-format
+msgid "Half-Life:"
+msgstr "Poluživot:"
+
+#: nuclearCalculator.cpp:179 nuclearCalculator.cpp:268
+#, kde-format
+msgid "year"
+msgstr "godina"
+
+#: nuclearCalculator.cpp:180 nuclearCalculator.cpp:269
+#, kde-format
+msgid "seconds"
+msgstr "sekundi"
+
+#: nuclearCalculator.cpp:181 nuclearCalculator.cpp:270
+#, kde-format
+msgid "minutes"
+msgstr "minuta"
+
+#: nuclearCalculator.cpp:182 nuclearCalculator.cpp:271
+#, kde-format
+msgid "hours"
+msgstr "sati"
+
+#: nuclearCalculator.cpp:183 nuclearCalculator.cpp:272
+#, kde-format
+msgid "days"
+msgstr "dana"
+
+#: nuclearCalculator.cpp:184 nuclearCalculator.cpp:273
+#, kde-format
+msgid "weeks"
+msgstr "danma"
+
+#: nuclearCalculator.cpp:201
+#, kde-format
+msgid "Calculation Mode:"
+msgstr "Režim računa:"
+
+#: nuclearCalculator.cpp:206
+#, kde-format
+msgid "Initial amount"
+msgstr "Režim računa"
+
+#: nuclearCalculator.cpp:207
+#, kde-format
+msgid "Final amount"
+msgstr "Krajnja količina"
+
+#: nuclearCalculator.cpp:208
+#, kde-format
+msgid "Time"
+msgstr "Vrijeme"
+
+#: nuclearCalculator.cpp:213
+#, kde-format
+msgid "Initial amount:"
+msgstr "Početna količina:"
+
+#: nuclearCalculator.cpp:216
+#, kde-format
+msgid "Final amount:"
+msgstr "Krajnja količina:"
+
+#: nuclearCalculator.cpp:219
+#, kde-format
+msgid "Time:"
+msgstr "Vrijeme:"
+
+#: nuclearCalculator.cpp:226
+#, kde-format
+msgid "0 seconds"
+msgstr "0 sekundi"
+
+#: nuclearCalculator.cpp:246 nuclearCalculator.cpp:257
+#, kde-format
+msgid "grams"
+msgstr "grama"
+
+#: nuclearCalculator.cpp:247 nuclearCalculator.cpp:258
+#, kde-format
+msgid "tons"
+msgstr "tona"
+
+#: nuclearCalculator.cpp:248 nuclearCalculator.cpp:259
+#, kde-format
+msgid "carats"
+msgstr "karata"
+
+#: nuclearCalculator.cpp:249 nuclearCalculator.cpp:260
+#, kde-format
+msgid "pounds"
+msgstr "funti"
+
+#: nuclearCalculator.cpp:250 nuclearCalculator.cpp:261
+#, kde-format
+msgid "ounces"
+msgstr "britanskih unci"
+
+#: nuclearCalculator.cpp:251 nuclearCalculator.cpp:262
+#, kde-format
+msgid "troy ounces"
+msgstr "međunarodnih unci"
+
+#: nuclearCalculator.cpp:279 nuclearCalculator.cpp:286
+#, kde-format
+msgid "Mass"
+msgstr "Masa"
+
+#: nuclearCalculator.cpp:280 nuclearCalculator.cpp:287
+#, kde-format
+msgid "moles"
+msgstr "mola"
+
+#: nuclearCalculator.cpp:298
+#, kde-format
+msgid "Reset"
+msgstr "Reset"
+
+#: nuclearCalculator.cpp:631
+#, kde-format
+msgid "Initial amount cannot be zero."
+msgstr "Početna količina ne može biti 0."
+
+#: nuclearCalculator.cpp:634
+#, kde-format
+msgid "Final amount cannot be zero."
+msgstr "Krajnja količina ne može biti 0."
+
+#: nuclearCalculator.cpp:637
+#, kde-format
+msgid "Time is zero, please enter a valid value."
+msgstr "Vrijeme je 0, unestie ispravnu vrijednost."
+
+#: nuclearCalculator.cpp:640
+#, kde-format
+msgid "Final amount cannot be greater than initial amount."
+msgstr "Krajnja vrijednost nemože biti veća od početne."
+
+#: nuclearCalculator.cpp:649
+#, kde-format
+msgid "General"
+msgstr "Opšte"
+
+#. i18n: ectx: property (text), widget (QCheckBox, massOnly)
+#: nuclearCalculatorConfig.ui:17
+#, kde-format
+msgid "Amount is always specified in term of mass"
+msgstr "Količina se uvijek navodi u jedinicama mase."

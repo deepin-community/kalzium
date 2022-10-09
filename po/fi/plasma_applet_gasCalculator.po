@@ -1,0 +1,270 @@
+# Finnish translation of Gas Calculator Plasma Applet.
+# Copyright © 2011, 2012 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kdeedu package.
+# Matti Simoska <matti.simoska@gmail.com>, 2011.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2012.
+#
+# KDE Finnish translation sprint participants:
+# Author: Lliehu
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_gasCalculator\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:01+0200\n"
+"PO-Revision-Date: 2013-01-20 20:03:20+0000\n"
+"Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
+"Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-POT-Import-Date: 2012-12-01 22:23:53+0000\n"
+"X-Generator: MediaWiki 1.21alpha (963ddae); Translate 2012-11-08\n"
+
+#: gasCalculator.cpp:98
+#, kde-format
+msgid "Gas Calculator"
+msgstr "Kaasulaskin"
+
+#: gasCalculator.cpp:108
+#, kde-format
+msgid "Calculation Mode:"
+msgstr "Laskentatapa:"
+
+#: gasCalculator.cpp:113
+#, kde-format
+msgid "Moles / Mass"
+msgstr "Moolia / Massa"
+
+#: gasCalculator.cpp:114
+#, kde-format
+msgid "Pressure"
+msgstr "Paine"
+
+#: gasCalculator.cpp:115
+#, kde-format
+msgid "Temperature"
+msgstr "Lämpötila"
+
+#: gasCalculator.cpp:116
+#, kde-format
+msgid "Volume"
+msgstr "Tilavuus"
+
+#: gasCalculator.cpp:126
+#, kde-format
+msgid "Molar Mass of Gas:"
+msgstr "Kaasun moolimassa:"
+
+#: gasCalculator.cpp:136
+#, kde-format
+msgid "u (mass)"
+msgstr "atomimassayksikkö"
+
+#: gasCalculator.cpp:146
+#, kde-format
+msgid "Number of moles:"
+msgstr "Moolien lukumäärä:"
+
+#: gasCalculator.cpp:161
+#, kde-format
+msgid "Mass of the gas:"
+msgstr "Kaasun massa:"
+
+#: gasCalculator.cpp:172
+#, kde-format
+msgid "grams"
+msgstr "grammaa"
+
+#: gasCalculator.cpp:173
+#, kde-format
+msgid "tons"
+msgstr "tonnia"
+
+#: gasCalculator.cpp:174
+#, kde-format
+msgid "carats"
+msgstr "karaattia"
+
+#: gasCalculator.cpp:175
+#, kde-format
+msgid "pounds"
+msgstr "paunaa"
+
+#: gasCalculator.cpp:176
+#, kde-format
+msgid "ounces"
+msgstr "unssia"
+
+#: gasCalculator.cpp:177
+#, kde-format
+msgid "troy ounces"
+msgstr "troy-unssia"
+
+#: gasCalculator.cpp:189
+#, kde-format
+msgid "Pressure of the Gas:"
+msgstr "Kaasun paine:"
+
+#: gasCalculator.cpp:200
+#, kde-format
+msgid "atmospheres"
+msgstr "ilmakehää"
+
+#: gasCalculator.cpp:201
+#, kde-format
+msgid "pascal"
+msgstr "pascal"
+
+#: gasCalculator.cpp:202
+#, kde-format
+msgid "bars"
+msgstr "baaria"
+
+#: gasCalculator.cpp:203
+#, kde-format
+msgid "millibars"
+msgstr "millibaaria"
+
+#: gasCalculator.cpp:204
+#, kde-format
+msgid "decibars"
+msgstr "desibaaria"
+
+#: gasCalculator.cpp:205
+#, kde-format
+msgid "torrs"
+msgstr "elohopeamillimetriä"
+
+#: gasCalculator.cpp:206
+#, kde-format
+msgid "inches of mercury"
+msgstr "elohopeatuumaa"
+
+#: gasCalculator.cpp:218
+#, kde-format
+msgid "Temperature:"
+msgstr "Lämpötila:"
+
+#: gasCalculator.cpp:229
+#, kde-format
+msgid "kelvins"
+msgstr "kelvinastetta"
+
+#: gasCalculator.cpp:230
+#, kde-format
+msgid "celsius"
+msgstr "celsiusastetta"
+
+#: gasCalculator.cpp:231
+#, kde-format
+msgid "fahrenheit"
+msgstr "fahrenheit-astetta"
+
+#: gasCalculator.cpp:232
+#, kde-format
+msgid "delisles"
+msgstr "delisle-astetta"
+
+#: gasCalculator.cpp:233
+#, kde-format
+msgid "réaumurs"
+msgstr "réaumur-astetta"
+
+#: gasCalculator.cpp:245
+#, kde-format
+msgid "Volume of the gas:"
+msgstr "Kaasun tilavuus:"
+
+#: gasCalculator.cpp:256
+#, kde-format
+msgid "liter"
+msgstr "litra"
+
+#: gasCalculator.cpp:257 gasCalculator.cpp:310
+#, kde-format
+msgid "cubic feet"
+msgstr "kuutiojalkaa"
+
+#: gasCalculator.cpp:258
+#, kde-format
+msgid "cubic inch"
+msgstr "kuutiotuuma"
+
+#: gasCalculator.cpp:259
+#, kde-format
+msgid "fluid ounce"
+msgstr "nesteunssi"
+
+#: gasCalculator.cpp:260 gasCalculator.cpp:313
+#, kde-format
+msgid "cups"
+msgstr "kuppia"
+
+#: gasCalculator.cpp:261 gasCalculator.cpp:312
+#, kde-format
+msgid "gallons"
+msgstr "gallonaa"
+
+#: gasCalculator.cpp:262
+#, kde-format
+msgid "pints"
+msgstr "pinttiä"
+
+#: gasCalculator.cpp:274
+#, kde-format
+msgid "Van der Waals constant 'a':"
+msgstr "Van der Waalsin vakio ”a”:"
+
+#: gasCalculator.cpp:285
+#, kde-format
+msgid "liter^2 atmosphere/mol^2"
+msgstr "litra² ilmakehä/mooli²"
+
+#: gasCalculator.cpp:297
+#, kde-format
+msgid "Van der Waals constant 'b':"
+msgstr "Van der Waalsin vakio ”b”:"
+
+#: gasCalculator.cpp:308
+#, kde-format
+msgid "liters"
+msgstr "litraa"
+
+#: gasCalculator.cpp:309
+#, kde-format
+msgid "cubic meters"
+msgstr "kuutiometriä"
+
+#: gasCalculator.cpp:311
+#, kde-format
+msgid "cubic inches"
+msgstr "kuutiotuumaa"
+
+#: gasCalculator.cpp:327
+#, kde-format
+msgid "Reset"
+msgstr "Nollaa"
+
+#: gasCalculator.cpp:645
+#, kde-format
+msgid "Volume cannot be zero, please enter a valid value."
+msgstr "Tilavuus ei voi olla nolla. Syötä kelvollinen arvo."
+
+#: gasCalculator.cpp:648
+#, kde-format
+msgid "The molar mass cannot be zero, please enter a non-zero value."
+msgstr "Moolimassa ei voi olla nolla. Syötä arvo, joka ei ole nolla."
+
+#: gasCalculator.cpp:658
+#, kde-format
+msgid "General"
+msgstr "Yleiset"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ideal)
+#: gasCalculatorConfig.ui:17
+#, kde-format
+msgid "Assume Gas is ideal (Do not show Van der Waals coefficients)"
+msgstr ""
+"Oleta kaasun olevan ideaalikaasua (Älä näytä Van der Waalsin kertoimia)"

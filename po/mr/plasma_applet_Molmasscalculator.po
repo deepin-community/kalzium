@@ -1,0 +1,85 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Chetan Khona <chetan@kompkin.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:01+0200\n"
+"PO-Revision-Date: 2013-03-22 11:12+0530\n"
+"Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
+"Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: Molmasscalculator.cpp:84
+#, kde-format
+msgid "Dataengine \"kalzium\" not found"
+msgstr "डेटाइंजिन \"केल्झियम\" सापडले नाही"
+
+#: Molmasscalculator.cpp:127
+#, kde-format
+msgid "Invalid Molecule"
+msgstr "अवैध रेणु"
+
+#: Molmasscalculator.cpp:155
+#, kde-format
+msgid "Molecule:"
+msgstr "रेणु :"
+
+#: Molmasscalculator.cpp:166
+#, kde-format
+msgid "C2H5OH"
+msgstr "C2H5OH"
+
+#: Molmasscalculator.cpp:240
+#, kde-format
+msgid "General"
+msgstr "सामान्य"
+
+#. i18n: ectx: property (text), widget (QCheckBox, copyToCliboard)
+#: Molmassconfig.ui:26
+#, kde-format
+msgid "Copy Result to Clipboard"
+msgstr "चिकटपट्टीवर निकाल प्रत करा"
+
+#. i18n: ectx: property (title), widget (QGroupBox, showPeriodic)
+#: Molmassconfig.ui:33
+#, kde-format
+msgid "Show Periodic Table"
+msgstr "पीरियोडिक कोष्टक दर्शवा"
+
+#: Periodictable.cpp:105
+#, kde-format
+msgid "Electronegativity:"
+msgstr "इलेक्ट्रोनिगेटिव्हिटी :"
+
+#: Periodictable.cpp:106
+#, kde-format
+msgid "Atomic mass:"
+msgstr "एटोमिक मास :"
+
+#: Periodictable.cpp:106
+#, kde-format
+msgid "u"
+msgstr "u"
+
+#: Periodictable.cpp:107
+#, kde-format
+msgid "Boiling point:"
+msgstr "उकलन बिंदू :"
+
+#: Periodictable.cpp:107 Periodictable.cpp:108
+#, kde-format
+msgid "K"
+msgstr "K"
+
+#: Periodictable.cpp:108
+#, kde-format
+msgid "Melting point:"
+msgstr "विरघण्याचा बिंदू :"

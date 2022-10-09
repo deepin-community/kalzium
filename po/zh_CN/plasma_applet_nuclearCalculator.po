@@ -1,0 +1,191 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ni Hui <shuizhuyuanluo@126.com>, 2010.
+# Feng Chao <rainofchaos@gmail.com>, 2010.
+# Berry Wang <berrywang1997@icloud.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:01+0200\n"
+"PO-Revision-Date: 2021-07-26 13:49\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-stable/messages/kalzium/plasma_applet_nuclearCalculator."
+"pot\n"
+"X-Crowdin-File-ID: 4344\n"
+
+#: nuclearCalculator.cpp:143
+#, kde-format
+msgid "Nuclear Calculator"
+msgstr "核计算器"
+
+#: nuclearCalculator.cpp:158
+#, kde-format
+msgid "Element name:"
+msgstr "元素名称："
+
+#: nuclearCalculator.cpp:161
+#, kde-format
+msgid "Isotope mass:"
+msgstr "同位素："
+
+#: nuclearCalculator.cpp:164
+#, kde-format
+msgid "Half-Life:"
+msgstr "半衰期："
+
+#: nuclearCalculator.cpp:179 nuclearCalculator.cpp:268
+#, kde-format
+msgid "year"
+msgstr "年"
+
+#: nuclearCalculator.cpp:180 nuclearCalculator.cpp:269
+#, kde-format
+msgid "seconds"
+msgstr "秒"
+
+#: nuclearCalculator.cpp:181 nuclearCalculator.cpp:270
+#, kde-format
+msgid "minutes"
+msgstr "分钟"
+
+#: nuclearCalculator.cpp:182 nuclearCalculator.cpp:271
+#, kde-format
+msgid "hours"
+msgstr "小时"
+
+#: nuclearCalculator.cpp:183 nuclearCalculator.cpp:272
+#, kde-format
+msgid "days"
+msgstr "天"
+
+#: nuclearCalculator.cpp:184 nuclearCalculator.cpp:273
+#, kde-format
+msgid "weeks"
+msgstr "周"
+
+#: nuclearCalculator.cpp:201
+#, kde-format
+msgid "Calculation Mode:"
+msgstr "计算模式："
+
+#: nuclearCalculator.cpp:206
+#, kde-format
+msgid "Initial amount"
+msgstr "初始量"
+
+#: nuclearCalculator.cpp:207
+#, kde-format
+msgid "Final amount"
+msgstr "最终量"
+
+#: nuclearCalculator.cpp:208
+#, kde-format
+msgid "Time"
+msgstr "时间"
+
+#: nuclearCalculator.cpp:213
+#, kde-format
+msgid "Initial amount:"
+msgstr "初始量："
+
+#: nuclearCalculator.cpp:216
+#, kde-format
+msgid "Final amount:"
+msgstr "最终量："
+
+#: nuclearCalculator.cpp:219
+#, kde-format
+msgid "Time:"
+msgstr "时间："
+
+#: nuclearCalculator.cpp:226
+#, kde-format
+msgid "0 seconds"
+msgstr "0 秒"
+
+#: nuclearCalculator.cpp:246 nuclearCalculator.cpp:257
+#, kde-format
+msgid "grams"
+msgstr "克"
+
+#: nuclearCalculator.cpp:247 nuclearCalculator.cpp:258
+#, kde-format
+msgid "tons"
+msgstr "吨"
+
+#: nuclearCalculator.cpp:248 nuclearCalculator.cpp:259
+#, kde-format
+msgid "carats"
+msgstr "克拉"
+
+#: nuclearCalculator.cpp:249 nuclearCalculator.cpp:260
+#, kde-format
+msgid "pounds"
+msgstr "磅"
+
+#: nuclearCalculator.cpp:250 nuclearCalculator.cpp:261
+#, kde-format
+msgid "ounces"
+msgstr "盎司"
+
+#: nuclearCalculator.cpp:251 nuclearCalculator.cpp:262
+#, kde-format
+msgid "troy ounces"
+msgstr "金衡盎司"
+
+#: nuclearCalculator.cpp:279 nuclearCalculator.cpp:286
+#, kde-format
+msgid "Mass"
+msgstr "质量"
+
+#: nuclearCalculator.cpp:280 nuclearCalculator.cpp:287
+#, kde-format
+msgid "moles"
+msgstr "摩尔"
+
+#: nuclearCalculator.cpp:298
+#, kde-format
+msgid "Reset"
+msgstr "重置"
+
+#: nuclearCalculator.cpp:631
+#, kde-format
+msgid "Initial amount cannot be zero."
+msgstr "初始值不能为 0。"
+
+#: nuclearCalculator.cpp:634
+#, kde-format
+msgid "Final amount cannot be zero."
+msgstr "最终值不能为 0。"
+
+#: nuclearCalculator.cpp:637
+#, kde-format
+msgid "Time is zero, please enter a valid value."
+msgstr "时间为 0，请输入合理的值。"
+
+#: nuclearCalculator.cpp:640
+#, kde-format
+msgid "Final amount cannot be greater than initial amount."
+msgstr "最终值不能比初始值更大。"
+
+#: nuclearCalculator.cpp:649
+#, kde-format
+msgid "General"
+msgstr "常规"
+
+#. i18n: ectx: property (text), widget (QCheckBox, massOnly)
+#: nuclearCalculatorConfig.ui:17
+#, kde-format
+msgid "Amount is always specified in term of mass"
+msgstr "总量应该以质量为指定方式"

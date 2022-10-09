@@ -1,0 +1,393 @@
+# translation of plasma_applet_concentrationCalculator.po to Italian
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Pino Toscano <toscano.pino@tiscali.it>, 2009, 2010, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_concentrationCalculator\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:01+0200\n"
+"PO-Revision-Date: 2012-06-05 22:11+0200\n"
+"Last-Translator: Pino Toscano <toscano.pino@tiscali.it>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: concentrationCalculator.cpp:96
+#, kde-format
+msgid "Concentration Calculator"
+msgstr "Calcolatore di concentrazione"
+
+#: concentrationCalculator.cpp:111
+#, kde-format
+msgid "Calculation Mode:"
+msgstr "Modalità di calcolo:"
+
+#: concentrationCalculator.cpp:117
+#, kde-format
+msgid "Amount Solute"
+msgstr "Quantità di soluto"
+
+#: concentrationCalculator.cpp:118
+#, kde-format
+msgid "Molar Mass of Solute"
+msgstr "Massa molare del soluto"
+
+#: concentrationCalculator.cpp:119
+#, kde-format
+msgid "Equivalent Mass"
+msgstr "Massa equivalente"
+
+#: concentrationCalculator.cpp:120
+#, kde-format
+msgid "Amount Solvent"
+msgstr "Quantità di solvente"
+
+#: concentrationCalculator.cpp:121
+#, kde-format
+msgid "Molar Mass of Solvent"
+msgstr "Massa molare del solvente"
+
+#: concentrationCalculator.cpp:122
+#, kde-format
+msgid "Concentration"
+msgstr "Concentrazione"
+
+#: concentrationCalculator.cpp:131
+#, kde-format
+msgid "Amount of solute:"
+msgstr "Quantità di soluto:"
+
+#: concentrationCalculator.cpp:141 concentrationCalculator.cpp:241
+#, kde-format
+msgid "Mass"
+msgstr "Massa"
+
+#: concentrationCalculator.cpp:142 concentrationCalculator.cpp:240
+#, kde-format
+msgid "volume"
+msgstr "volume"
+
+#: concentrationCalculator.cpp:143 concentrationCalculator.cpp:242
+#, kde-format
+msgid "moles"
+msgstr "moli"
+
+#: concentrationCalculator.cpp:149 concentrationCalculator.cpp:1026
+#: concentrationCalculator.cpp:1093
+#, kde-format
+msgid "grams"
+msgstr "grammi"
+
+#: concentrationCalculator.cpp:150 concentrationCalculator.cpp:1027
+#: concentrationCalculator.cpp:1094
+#, kde-format
+msgid "tons"
+msgstr "tonnellate"
+
+#: concentrationCalculator.cpp:151 concentrationCalculator.cpp:1028
+#: concentrationCalculator.cpp:1095
+#, kde-format
+msgid "carats"
+msgstr "carati"
+
+#: concentrationCalculator.cpp:152 concentrationCalculator.cpp:1029
+#: concentrationCalculator.cpp:1096
+#, kde-format
+msgid "pounds"
+msgstr "libbre"
+
+#: concentrationCalculator.cpp:153 concentrationCalculator.cpp:1030
+#: concentrationCalculator.cpp:1097
+#, kde-format
+msgid "ounces"
+msgstr "once"
+
+#: concentrationCalculator.cpp:154 concentrationCalculator.cpp:1031
+#: concentrationCalculator.cpp:1098
+#, kde-format
+msgid "troy ounces"
+msgstr "oncia troy"
+
+#: concentrationCalculator.cpp:165
+#, kde-format
+msgid "Molar mass of solute:"
+msgstr "Massa molare del soluto:"
+
+#: concentrationCalculator.cpp:174 concentrationCalculator.cpp:193
+#: concentrationCalculator.cpp:278
+#, kde-format
+msgid "u (mass)"
+msgstr "u (massa)"
+
+#: concentrationCalculator.cpp:183
+#, kde-format
+msgid "Equivalent mass of solute:"
+msgstr "Massa equivalente del soluto:"
+
+#: concentrationCalculator.cpp:203
+#, kde-format
+msgid "Density of solute:"
+msgstr "Densità del soluto:"
+
+#: concentrationCalculator.cpp:213 concentrationCalculator.cpp:298
+#, kde-format
+msgid "grams per liter"
+msgstr "grammi per litro"
+
+#: concentrationCalculator.cpp:214 concentrationCalculator.cpp:299
+#, kde-format
+msgid "grams per milliliter"
+msgstr "grammi per millimetro"
+
+#: concentrationCalculator.cpp:215 concentrationCalculator.cpp:300
+#, kde-format
+msgid "kilograms per cubic meter"
+msgstr "kilogrammi per metro cubico"
+
+#: concentrationCalculator.cpp:216 concentrationCalculator.cpp:301
+#, kde-format
+msgid "kilograms per liter"
+msgstr "kilogrammi per litro"
+
+#: concentrationCalculator.cpp:217 concentrationCalculator.cpp:302
+#, kde-format
+msgid "ounces per cubic inch"
+msgstr "once per pollice cubico"
+
+#: concentrationCalculator.cpp:218 concentrationCalculator.cpp:303
+#, kde-format
+msgid "ounces per cubic foot"
+msgstr "once per piede cubico"
+
+#: concentrationCalculator.cpp:219 concentrationCalculator.cpp:304
+#, kde-format
+msgid "pounds per cubic inch"
+msgstr "libbre per pollice cubico"
+
+#: concentrationCalculator.cpp:220 concentrationCalculator.cpp:305
+#, kde-format
+msgid "pounds per cubic foot"
+msgstr "libbre per piede cubico"
+
+#: concentrationCalculator.cpp:221 concentrationCalculator.cpp:306
+#, kde-format
+msgid "pounds per cubic yard"
+msgstr "libbre per iarda cubica"
+
+#: concentrationCalculator.cpp:230
+#, kde-format
+msgid "Amount of solvent:"
+msgstr "Quantità di solvente:"
+
+#: concentrationCalculator.cpp:249 concentrationCalculator.cpp:1038
+#: concentrationCalculator.cpp:1078
+#, kde-format
+msgid "liter"
+msgstr "litro"
+
+#: concentrationCalculator.cpp:250 concentrationCalculator.cpp:1039
+#: concentrationCalculator.cpp:1079
+#, kde-format
+msgid "cubic meters"
+msgstr "metri cubici"
+
+#: concentrationCalculator.cpp:251 concentrationCalculator.cpp:1040
+#: concentrationCalculator.cpp:1080
+#, kde-format
+msgid "cubic feet"
+msgstr "piedi cubici"
+
+#: concentrationCalculator.cpp:252 concentrationCalculator.cpp:1041
+#: concentrationCalculator.cpp:1081
+#, kde-format
+msgid "cubic inch"
+msgstr "pollici cubici"
+
+#: concentrationCalculator.cpp:253 concentrationCalculator.cpp:1042
+#: concentrationCalculator.cpp:1082
+#, kde-format
+msgid "cubic mile"
+msgstr "miglio cubico"
+
+#: concentrationCalculator.cpp:254 concentrationCalculator.cpp:1043
+#: concentrationCalculator.cpp:1083
+#, kde-format
+msgid "fluid ounce"
+msgstr "oncia liquida"
+
+#: concentrationCalculator.cpp:255 concentrationCalculator.cpp:1044
+#: concentrationCalculator.cpp:1084
+#, kde-format
+msgid "cups"
+msgstr "tazze"
+
+#: concentrationCalculator.cpp:256 concentrationCalculator.cpp:1045
+#: concentrationCalculator.cpp:1085
+#, kde-format
+msgid "gallons"
+msgstr "galloni"
+
+#: concentrationCalculator.cpp:257 concentrationCalculator.cpp:1046
+#: concentrationCalculator.cpp:1086
+#, kde-format
+msgid "pints"
+msgstr "pinte"
+
+#: concentrationCalculator.cpp:269
+#, kde-format
+msgid "Molar mass of solvent:"
+msgstr "Massa molare del solvente:"
+
+#: concentrationCalculator.cpp:288
+#, kde-format
+msgid "Density of solvent:"
+msgstr "Densità del solvente:"
+
+#: concentrationCalculator.cpp:317
+#, kde-format
+msgid "Concentration:"
+msgstr "Concentrazione:"
+
+#: concentrationCalculator.cpp:327
+#, kde-format
+msgid "molar"
+msgstr "molare"
+
+#: concentrationCalculator.cpp:328
+#, kde-format
+msgid "Normal"
+msgstr "Normale"
+
+#: concentrationCalculator.cpp:329
+#, kde-format
+msgid "molal"
+msgstr "molale"
+
+#: concentrationCalculator.cpp:330
+#, kde-format
+msgid "% ( mass )"
+msgstr "% (massa)"
+
+#: concentrationCalculator.cpp:331
+#, kde-format
+msgid "% ( volume )"
+msgstr "% (volume)"
+
+#: concentrationCalculator.cpp:332
+#, kde-format
+msgid "% ( moles )"
+msgstr "% (moli)"
+
+#: concentrationCalculator.cpp:341
+#, kde-format
+msgid "Reset"
+msgstr "Azzera"
+
+#: concentrationCalculator.cpp:1232
+#, kde-format
+msgid "Percentage should be less than 100.0, please enter a valid value."
+msgstr "La percentuale deve essere meno di 100.0, inserisci un valore valido."
+
+#: concentrationCalculator.cpp:1235
+#, kde-format
+msgid "Density cannot be zero, please enter a valid value."
+msgstr "La densità non può essere zero, inserisci un valore valido."
+
+#: concentrationCalculator.cpp:1238
+#, kde-format
+msgid "Mass cannot be zero, please enter a valid value."
+msgstr "La massa non può essere zero, inserisci un valore valido."
+
+#: concentrationCalculator.cpp:1241
+#, kde-format
+msgid "Volume cannot be zero, please enter a valid value."
+msgstr "Il volume non può essere zero, inserisci un valore valido."
+
+#: concentrationCalculator.cpp:1244
+#, kde-format
+msgid "Number of moles cannot be zero, please enter a valid value."
+msgstr "Il numero di moli non può essere zero, inserisci un valore valido."
+
+#: concentrationCalculator.cpp:1247
+#, kde-format
+msgid "Molar mass of solvent is zero, please enter a valid value."
+msgstr "La massa molare del solvente è zero, inserisci un valore valido."
+
+#: concentrationCalculator.cpp:1250
+#, kde-format
+msgid "Number of equivalents is zero - cannot calculate equivalent mass."
+msgstr ""
+"Il numero di equivalenti è zero - non è possibile calcolare la massa "
+"equivalente."
+
+#: concentrationCalculator.cpp:1253
+#, kde-format
+msgid "Concentration is zero, please enter a valid value."
+msgstr "La concentrazione è zero, inserisci un valore valido."
+
+#: concentrationCalculator.cpp:1256
+#, kde-format
+msgid ""
+"Insufficient data to calculate the required value, please specify normality."
+msgstr ""
+"Dati non sufficienti per calcolare il valore richiesto, specificare la "
+"normalità."
+
+#: concentrationCalculator.cpp:1259
+#, kde-format
+msgid ""
+"Insufficient data, please specify molarity / mole fraction / molality to "
+"calculate."
+msgstr ""
+"Dati non sufficienti, specificare la molarità, la frazione molare oppure la "
+"molalità."
+
+#: concentrationCalculator.cpp:1262
+#, kde-format
+msgid ""
+"Amount is specified in moles, cannot calculate molar/equivalent masses. "
+"Please specify mass/volume."
+msgstr ""
+"La quantità è specificata in moli, non è possibile calcolare le masse molari/"
+"equivalenti. Specifica massa/volume."
+
+#: concentrationCalculator.cpp:1265
+#, kde-format
+msgid ""
+"You can only calculate the molar mass of a solvent if the mole fraction is "
+"specified."
+msgstr ""
+"Puoi calcolare la massa molare di un solvente solo se la frazione molare è "
+"specificata."
+
+#: concentrationCalculator.cpp:1268
+#, kde-format
+msgid "Molar mass cannot be zero, please enter a valid value."
+msgstr "La massa molare non può essere zero, inserisci un valore valido."
+
+#: concentrationCalculator.cpp:1271
+#, kde-format
+msgid "Equivalent mass cannot be zero, please enter a valid value."
+msgstr "La massa equivalente non può essere zero, inserisci un valore valido."
+
+#: concentrationCalculator.cpp:1282
+#, kde-format
+msgid "General"
+msgstr "Generale"
+
+#. i18n: ectx: property (text), widget (QCheckBox, soluteMass)
+#: concentrationCalculatorConfig.ui:17
+#, kde-format
+msgid "Amount of solute is always specified in terms of mass"
+msgstr "La quantità di soluto è sempre specificata in termini della massa"
+
+#. i18n: ectx: property (text), widget (QCheckBox, solventVolume)
+#: concentrationCalculatorConfig.ui:24
+#, kde-format
+msgid "Amount of solvent is always specified in terms of volume"
+msgstr "La quantità di solvente è sempre specificata in termini del volume"

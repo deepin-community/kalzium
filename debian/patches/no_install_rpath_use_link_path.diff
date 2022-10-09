@@ -1,0 +1,31 @@
+From: Modestas Vainius <modax@debian.org>
+Date: Thu, 21 Apr 2016 04:27:25 +0200
+Subject: disable INSTALL_RPATH_USE_LINK_PATH where it triggers useless RPATH
+ . kalzium: lintian output: 'binary-or-shlib-defines-rpath ./usr/bin/kalzium
+ /usr/lib/ocaml', automatically rejected package.
+
+---
+ compoundviewer/CMakeLists.txt | 1 +
+ src/CMakeLists.txt            | 1 +
+ 2 files changed, 2 insertions(+)
+
+--- a/compoundviewer/CMakeLists.txt
++++ b/compoundviewer/CMakeLists.txt
+@@ -33,6 +33,7 @@ set_target_properties(compoundviewer PRO
+     SOVERSION ${KALZIUMLIB_SOVERSION}
+     CXX_STANDARD 14
+     CXX_STANDARD_REQUIRED ON
++    INSTALL_RPATH_USE_LINK_PATH false
+ )
+ 
+ install(TARGETS compoundviewer ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -137,6 +137,7 @@ kconfig_add_kcfg_files(kalzium_SRCS pref
+ 
+ add_executable(kalzium ${kalzium_SRCS})
+ 
++set_target_properties(kalzium PROPERTIES INSTALL_RPATH_USE_LINK_PATH false)
+ target_link_libraries(kalzium
+     KF5::Completion
+     KF5::ConfigWidgets

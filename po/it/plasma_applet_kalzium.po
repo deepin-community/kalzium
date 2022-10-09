@@ -1,0 +1,95 @@
+# translation of plasma_applet_kalzium.po to Italian
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Federico Bosi <federico.bosi@yahoo.it>, 2008.
+# Federico Zenith <federico.zenith@member.fsf.org>, 2009.
+# Paolo Zamponi <zapaolo@email.it>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_kalzium\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-12-19 02:14+0100\n"
+"PO-Revision-Date: 2020-12-21 07:41+0100\n"
+"Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.08.3\n"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: config.ui:18
+#, kde-format
+msgid "Theme:"
+msgstr "Tema:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, comboBox)
+#: config.ui:32
+#, kde-format
+msgid "testtube.svg"
+msgstr "testtube.svg"
+
+#. i18n: ectx: property (text), widget (QPushButton, fontSelectButton)
+#: config.ui:42
+#, kde-format
+msgid "Select Font..."
+msgstr "Seleziona il carattere..."
+
+#: kalzium_plasma.cpp:41
+#, kde-format
+msgid "Enter the atomic number."
+msgstr "Inserisci il numero atomico."
+
+#: kalzium_plasma.cpp:107
+#, kde-format
+msgid ""
+"\n"
+"Name: %1"
+msgstr ""
+"\n"
+"Nome: %1"
+
+#: kalzium_plasma.cpp:108
+#, kde-format
+msgid ""
+"\n"
+"Symbol: %1"
+msgstr ""
+"\n"
+"Simbolo: %1"
+
+#: kalzium_plasma.cpp:109
+#, kde-format
+msgid ""
+"\n"
+"Boiling point: %1"
+msgstr ""
+"\n"
+"Punto di ebollizione: %1"
+
+#: kalzium_plasma.cpp:110
+#, kde-format
+msgid ""
+"\n"
+"Melting point: %1"
+msgstr ""
+"\n"
+"Punto di fusione: %1"
+
+#: kalzium_plasma.cpp:111
+#, kde-format
+msgid ""
+"\n"
+"Mass: %1"
+msgstr ""
+"\n"
+"Massa: %1"
+
+#: kalzium_plasma.cpp:141
+#, kde-format
+msgctxt "@title:window"
+msgid "KalziumPlasma Configuration"
+msgstr "Configurazione di KalziumPlasma"

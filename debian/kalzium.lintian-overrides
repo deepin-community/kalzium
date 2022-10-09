@@ -1,0 +1,6 @@
+# private library
+kalzium: package-name-doesnt-match-sonames libcompoundviewer5 libscience5
+# private library
+kalzium: no-symbols-control-file usr/lib/*/libcompoundviewer.so.*
+# private library
+kalzium: no-symbols-control-file usr/lib/*/libscience.so.*

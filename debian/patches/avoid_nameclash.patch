@@ -1,0 +1,146 @@
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Thu, 21 Apr 2016 04:27:25 +0200
+Subject: avoid_nameclash
+
+===================================================================
+---
+ plasmoid/applet/gasPlasmoid/gasCalculator.cpp | 12 ++++++------
+ plasmoid/applet/gasPlasmoid/gasCalculator.h   |  2 +-
+ src/calculator/gasCalculator.cpp              | 12 ++++++------
+ src/calculator/gasCalculator.h                |  2 +-
+ 4 files changed, 14 insertions(+), 14 deletions(-)
+
+--- a/plasmoid/applet/gasPlasmoid/gasCalculator.cpp
++++ b/plasmoid/applet/gasPlasmoid/gasCalculator.cpp
+@@ -430,7 +430,7 @@ void gasCalculator::calculatePressure()
+     double temp = (m_converter->convert(m_Temp, "kelvins")).number();
+     double b = (m_converter->convert(m_Vand_B, "liters")).number();
+ 
+-    pressure = m_Moles * R * temp / (volume - m_Moles * b) - m_Moles * m_Moles * m_Vand_A / volume / volume;
++    pressure = m_Moles * GAS_R * temp / (volume - m_Moles * b) - m_Moles * m_Moles * m_Vand_A / volume / volume;
+     m_Pressure = Value(pressure, "atmospheres");
+     m_Pressure = m_converter->convert(m_Pressure, m_pressureUnit->nativeWidget()->currentText());
+     m_pressure->setValue(m_Pressure.number());
+@@ -447,7 +447,7 @@ void gasCalculator::calculateMolarMass()
+     double temp = ((m_converter->convert(m_Temp, "kelvins")).number());
+     double b = ((m_converter->convert(m_Vand_B, "liters")).number());
+ 
+-    m_MolarMass = mass * R * temp / (pressure + m_Moles * m_Moles * m_Vand_A / volume / volume)\
++    m_MolarMass = mass * GAS_R * temp / (pressure + m_Moles * m_Moles * m_Vand_A / volume / volume)\
+                   / (volume - m_Moles * b);
+     m_molarMass->setValue(m_MolarMass);
+ }
+@@ -460,7 +460,7 @@ void gasCalculator::calculateVol()
+     double temp = ((m_converter->convert(m_Temp, "kelvins")).number());
+     double b = ((m_converter->convert(m_Vand_B, "liters")).number());
+ 
+-    volume = m_Moles * R * temp / pressure + (m_Moles * b);
++    volume = m_Moles * GAS_R * temp / pressure + (m_Moles * b);
+     m_Vol = Value(volume, "liters");
+     m_Vol = (m_converter->convert(m_Vol, m_volumeUnit->nativeWidget()->currentText()));
+     m_volume->setValue(m_Vol.number());
+@@ -475,7 +475,7 @@ void gasCalculator::calculateTemp()
+     double b = ((m_converter->convert(m_Vand_B, "liters")).number());
+ 
+     temp = (pressure + (m_Moles * m_Moles * m_Vand_A / volume / volume))\
+-           * (volume - m_Moles * b) / m_Moles / R;
++           * (volume - m_Moles * b) / m_Moles / GAS_R;
+     m_Temp = Value(temp, "kelvins");
+     m_Temp = (m_converter->convert(m_Temp, m_temperatureUnit->nativeWidget()->currentText()));
+     m_temperature->setValue(m_Temp.number());
+@@ -490,7 +490,7 @@ void gasCalculator::calculateMoles()
+     double b = ((m_converter->convert(m_Vand_B, "liters")).number());
+ 
+     m_Moles = (pressure + m_Moles * m_Moles * m_Vand_A / volume / volume)\
+-              * (volume - m_Moles * b) / R / temp;
++              * (volume - m_Moles * b) / GAS_R / temp;
+     m_moles->setValue(m_Moles);
+ }
+ 
+@@ -504,7 +504,7 @@ void gasCalculator::calculateMass()
+     double b = ((m_converter->convert(m_Vand_B, "liters")).number());
+ 
+     mass = (pressure + m_Moles * m_Moles * m_Vand_A / volume / volume)\
+-           * (volume - m_Moles * b) * m_MolarMass / R / temp;
++           * (volume - m_Moles * b) * m_MolarMass / GAS_R / temp;
+     m_Mass = Value(mass, "grams");
+     m_Mass = (m_converter->convert(m_Mass, m_massUnit->nativeWidget()->currentText()));
+     m_mass->setValue(m_Mass.number());
+--- a/plasmoid/applet/gasPlasmoid/gasCalculator.h
++++ b/plasmoid/applet/gasPlasmoid/gasCalculator.h
+@@ -23,7 +23,7 @@
+ 
+ #include "ui_gasCalculatorConfig.h"
+ 
+-#define R 0.08206
++#define GAS_R 0.08206
+ 
+ namespace Plasma{
+     class ComboBox;
+--- a/src/calculator/gasCalculator.cpp
++++ b/src/calculator/gasCalculator.cpp
+@@ -143,7 +143,7 @@ void gasCalculator::calculatePressure()
+     double temp = m_temp.convertTo(KUnitConversion::Kelvin).number();
+     double b = m_Vand_b.convertTo(KUnitConversion::Liter).number();
+ 
+-    double pressure = m_moles * R * temp / (volume - m_moles * b) - m_moles * m_moles * m_Vand_a / volume / volume;
++    double pressure = m_moles * GAS_R * temp / (volume - m_moles * b) - m_moles * m_moles * m_Vand_a / volume / volume;
+ 
+     m_pressure = Value(pressure, KUnitConversion::Atmosphere);
+     m_pressure = m_pressure.convertTo(KUnitConversion::UnitId(getCurrentUnitId(ui.pressure_unit)));
+@@ -158,7 +158,7 @@ void gasCalculator::calculateMolarMass()
+     double temp = m_temp.convertTo(KUnitConversion::Kelvin).number();
+     double b = m_Vand_b.convertTo(KUnitConversion::Liter).number();
+ 
+-    m_molarMass = mass * R * temp / (pressure + m_moles * m_moles * m_Vand_a / volume / volume)\
++    m_molarMass = mass * GAS_R * temp / (pressure + m_moles * m_moles * m_Vand_a / volume / volume)\
+                   / (volume - m_moles * b);
+     ui.molarMass->setValue(m_molarMass);
+ }
+@@ -169,7 +169,7 @@ void gasCalculator::calculateVol()
+     double temp = m_temp.convertTo(KUnitConversion::Kelvin).number();
+     double b = m_Vand_b.convertTo(KUnitConversion::Liter).number();
+ 
+-    double volume = m_moles * R * temp / pressure + (m_moles * b);
++    double volume = m_moles * GAS_R * temp / pressure + (m_moles * b);
+     m_vol = Value(volume, KUnitConversion::Liter);
+     m_vol = m_vol.convertTo(KUnitConversion::UnitId(getCurrentUnitId(ui.volume_unit)));
+     ui.volume->setValue(m_vol.number());
+@@ -182,7 +182,7 @@ void gasCalculator::calculateTemp()
+     double b = m_Vand_b.convertTo(KUnitConversion::Liter).number();
+ 
+     double temp = (pressure + (m_moles * m_moles * m_Vand_a / volume / volume))\
+-                  * (volume - m_moles * b) / m_moles / R;
++                  * (volume - m_moles * b) / m_moles / GAS_R;
+     m_temp = Value(temp, KUnitConversion::Kelvin);
+     m_temp = m_temp.convertTo(KUnitConversion::UnitId(getCurrentUnitId(ui.temp_unit)));
+     ui.temp->setValue(m_temp.number());
+@@ -196,7 +196,7 @@ void gasCalculator::calculateMoles()
+     double b = m_Vand_b.convertTo(KUnitConversion::Liter).number();
+ 
+     m_moles = (pressure + m_moles * m_moles * m_Vand_a / volume / volume)\
+-              * (volume - m_moles * b) / R / temp;
++              * (volume - m_moles * b) / GAS_R / temp;
+     ui.moles->setValue(m_moles);
+ }
+ 
+@@ -208,7 +208,7 @@ void gasCalculator::calculateMass()
+     double b = m_Vand_b.convertTo(KUnitConversion::Liter).number();
+ 
+     double mass = (pressure + m_moles * m_moles * m_Vand_a / volume / volume)\
+-                  * (volume - m_moles * b) * m_molarMass / R / temp;
++                  * (volume - m_moles * b) * m_molarMass / GAS_R / temp;
+     m_mass = Value(mass, KUnitConversion::Gram);
+     m_mass = m_mass.convertTo(KUnitConversion::UnitId(getCurrentUnitId(ui.mass_unit)));
+     ui.mass->setValue(m_mass.number());
+--- a/src/calculator/gasCalculator.h
++++ b/src/calculator/gasCalculator.h
+@@ -30,7 +30,7 @@
+ #include "ui_gasCalculator.h"
+ 
+ // The universal Gas constant is defined here.
+-const double R = 0.08206;
++const double GAS_R = 0.08206;
+ 
+ using namespace KUnitConversion;
+ 

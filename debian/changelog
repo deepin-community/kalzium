@@ -1,0 +1,898 @@
+kalzium (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 15:47:26 +0900
+
+kalzium (4:21.04.0-2) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * Add missing dep on libopengl-dev.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 27 Apr 2021 17:41:02 +0900
+
+kalzium (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Drop Kubuntu from maintainer name.
+  * Drop Eshat and Max from uploaders, thanks for your work.
+  * Add myself to uploaders.
+  * Update upstream signing key.
+  * Update/drop patches.
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 23 Apr 2021 14:36:11 +0900
+
+kalzium (4:20.12.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump Standards-Version to 4.5.1, no changes required.
+  * Update the build dependencies according to the upstream build system:
+    - bump KF packages to 5.57.0
+  * Update install files.
+  * Unregister the old /etc/xdg/kalzium.knsrc conffile.
+  * Enable the molecular editor: (Closes: #951674)
+    - backport the upstream commit 2b9ebd854d85fa1e092c766e149e16ac18019496 to
+      support OpenBabel 3; patch upstream_Add-support-for-OpenBabel-3.x.patch
+    - add the libavogadro-dev, libkf5newstuff-dev, and libqt5opengl5-dev build
+      dependencies
+    - bump the libopenbabel-dev build dependency to 3.1.1+dfsg-4, as it
+      contains all the needed cmake fixes
+  * Update lintian overrides.
+
+ -- Pino Toscano <pino@debian.org>  Wed, 06 Jan 2021 16:42:07 +0100
+
+kalzium (4:20.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump the debhelper compatibility to 13:
+    - switch the debhelper-compat build dependency to 13
+    - stop passing --fail-missing to dh_missing, as it is the default now
+  * Add Rules-Requires-Root: no.
+  * Re-export upstream signing key without extra signatures.
+  * Remove obsolete field Name from debian/upstream/metadata (already present in
+    machine-readable debian/copyright).
+
+ -- Pino Toscano <pino@debian.org>  Mon, 16 Nov 2020 12:49:23 +0100
+
+kalzium (4:20.04.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update watch file to the new release-service location.
+  * Update the build dependencies according to the upstream build system:
+    - remove libkf5khtml-dev, no more needed
+  * Update the patches:
+    - no_install_rpath_use_link_path.diff: refresh
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+    - call the right debhelper command instead of $(overridden_command)
+    - manually force the generation of the substvars for the kde-l10n breaks
+  * Bump the debhelper compatibility to 12:
+    - switch the debhelper build dependency to debhelper-compat 12
+    - remove debian/compat
+    - switch from dh_install to dh_missing for --fail-missing
+  * Bump Standards-Version to 4.5.0, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 02 May 2020 10:22:47 +0200
+
+kalzium (4:19.08.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Scarlett Moore ]
+  * Update VCS entries in changelog.
+
+  [ Pino Toscano ]
+  * New upstream release.
+  * Bump Standards-Version to 4.4.1, no changes required.
+  * Add the configuration for the CI on salsa.
+  * Bump the debhelper compatibility to 11:
+    - bump the debhelper build dependency to 11~
+    - bump compat to 11
+  * Update the build dependencies according to the upstream build system:
+    - bump cmake to 3.5.0
+    - bump Qt packages to 5.9.0
+    - bump KF packages to 5.42.0
+    - remove libboost-python-dev (Closes: #890195), libkf5kdelibs4support-dev,
+      libkf5newstuff-dev, libqt5opengl5-dev, and qtdeclarative5-dev
+  * Update the patches:
+    - no_install_rpath_use_link_path.diff: refresh
+    - avoid_nameclash.patch: refresh
+    - add_missing_include.patch: drop, fixed upstream
+  * Explicitly remove the development stuff, to make sure it is not
+    accidentally shipped anywhere
+    - drop debian/not-installed, no more needed now
+    - invoke dh_install with --fail-missing, to not miss uninstalled files
+  * Small changes to copyright.
+  * Update lintian overrides.
+  * Remove empty line at the end of changelog.
+
+ -- Pino Toscano <pino@debian.org>  Wed, 09 Oct 2019 08:04:21 +0200
+
+kalzium (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+  * New upstream release.
+  * Adjust l10npkgs_firstversion_ok to the version where kde-l10n will
+    drop translations.
+  * Bump Standards-Version to 4.1.1, no changes required.
+  * Simplify watch file, and switch it to https.
+  * Remove trailing whitespaces in changelog.
+  * Remove unused build dependencies: libglew-dev, libsm-dev, libsoprano-dev,
+    and libxext-dev.
+  * Remove outdated debian/kalzium.install.armhf file; the generic one should
+    work fine.
+  * Update lintian overrides.
+  * Update Vcs-* fields.
+  * Do not ship translations of Plasma-related stuff, since they are not
+    ported yet.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 02 Dec 2017 10:09:27 +0100
+
+kalzium (4:17.08.0-1.1) experimental; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix "kalzium FTBFS with OCaml 4.05.0: Options -c and -o are
+    incompatible when compiling C files" by applying patch from
+    Stéphane Glondu, via the BTS (Closes: #869869)
+
+ -- Tobias Frost <tobi@debian.org>  Sun, 22 Oct 2017 16:47:55 +0200
+
+kalzium (4:17.08.0-1) experimental; urgency=medium
+
+  * New upstream release (17.08.0)
+  * Bump Standards-Version to 4.1.0.
+  * Update build-deps and deps with the info from cmake
+  * Bump kde-l10n breaks/replaces versions
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 18 Sep 2017 15:06:16 +0200
+
+kalzium (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:32:42 +0000
+
+kalzium (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:18:49 +0000
+
+kalzium (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:20:22 +0000
+
+kalzium (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:11:58 +0000
+
+kalzium (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:03:03 +0000
+
+kalzium (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:47:02 +0000
+
+kalzium (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 28 Feb 2017 17:37:29 +0000
+
+kalzium (4:16.08.3-1) unstable; urgency=medium
+
+  * New upstream release (16.08.3)
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 23 Nov 2016 20:54:59 +0100
+
+kalzium (4:16.08.2-1) unstable; urgency=medium
+
+  [ Pino Toscano ]
+  * Remove unused libsoprano-dev build dependency.
+
+  [ Automatic packaging ]
+  * Refresh patches
+
+  [ Maximiliano Curia ]
+  * New upstream release (16.08.2)
+  * Update install files
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 18 Oct 2016 23:54:20 +0200
+
+kalzium (4:16.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 07 Oct 2016 11:44:50 +0000
+
+kalzium (4:16.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 17 Aug 2016 11:47:39 +0000
+
+kalzium (4:16.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 12 Jul 2016 11:39:19 +0000
+
+kalzium (4:16.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 16 Jun 2016 11:08:53 +0000
+
+kalzium (4:16.04.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+  * Refresh patches
+
+  [ Maximiliano Curia ]
+  * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 21 May 2016 16:43:17 +0200
+
+kalzium (4:15.08.3-1) experimental; urgency=medium
+
+  * New upstream release (15.08.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 10:22:35 +0100
+
+kalzium (4:15.08.0-1) unstable; urgency=medium
+
+  * New upstream release (15.04.0).
+  * New upstream release (15.04.1).
+  * New upstream release (15.04.2).
+  * New upstream release (15.08.0).
+  * Add libsoprano-dev build dep. (Closes: #799380)
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 19 Sep 2015 19:11:10 +0200
+
+kalzium (4:14.12.3-1) experimental; urgency=medium
+
+  * New upstream release (14.12.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 29 Mar 2015 15:12:50 +0200
+
+kalzium (4:14.12.3-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 13 Mar 2015 13:43:09 -0700
+
+kalzium (4:14.12.2-1) experimental; urgency=medium
+
+  * Prepare Debian release.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 17 Feb 2015 10:40:10 +0100
+
+kalzium (4:14.12.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 10 Feb 2015 08:13:44 -0800
+
+kalzium (4:14.12.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+  * Remove kdelibs5-dev depend version as there was not a new release.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 15 Dec 2014 16:01:02 +0100
+
+kalzium (4:14.11.97-0ubuntu1) vivid; urgency=medium
+
+  * Merge with debian unstable, remaining changes:
+    - only build-depend on libavogadro-dev on !armhf
+    - add kalzium.install.armhf
+  * Fix watch urls for new release location.
+  * Update Vcs urls for the new repository location.
+  * New upstream release candidate
+  * Suggest khelpcenter instead of khelpcenter4.
+  * PPA build
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Fri, 28 Nov 2014 20:35:09 +0100
+
+kalzium (4:4.14.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 10 Oct 2014 04:00:51 -0700
+
+kalzium (4:4.14.1-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Mon, 22 Sep 2014 16:29:28 +0200
+
+kalzium (4:4.14.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 20 Aug 2014 12:33:40 +0200
+
+kalzium (4:4.13.97-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release RC
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Fri, 01 Aug 2014 16:15:41 +0200
+
+kalzium (4:4.13.95-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Wed, 30 Jul 2014 17:27:03 +0200
+
+kalzium (4:4.13.90-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Thu, 24 Jul 2014 17:34:41 +0200
+
+kalzium (4:4.13.2-0ubuntu2) utopic; urgency=medium
+
+  * Restore Ubuntu change to not build-dep on libavogadro-dev on armhf since
+    avogardo isn't built on armhf in Ubuntu due to no GL on armhf
+
+ -- Scott Kitterman <scott@kitterman.com>  Tue, 24 Jun 2014 13:09:33 -0400
+
+kalzium (4:4.13.2-0ubuntu1) utopic; urgency=medium
+
+  [ Scarlett Clark ]
+  * Debian merge: no remaining changes
+
+  [ Jonathan Riddell ]
+  * new upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Jun 2014 11:42:57 +0100
+
+kalzium (4:4.13.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 20 May 2014 11:08:47 +0200
+
+kalzium (4:4.13.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream KDE Software Compilation release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 10 Apr 2014 21:38:27 +0100
+
+kalzium (4:4.12.97-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Wed, 02 Apr 2014 11:10:02 +0200
+
+kalzium (4:4.12.95-0ubuntu1) trusty; urgency=medium
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sun, 23 Mar 2014 11:56:34 +0100
+
+kalzium (4:4.12.90-0ubuntu2) trusty; urgency=medium
+
+  * Swap libavogadro-dev build-dep from positive to negative arch list.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Fri, 21 Mar 2014 00:20:05 -0600
+
+kalzium (4:4.12.90-0ubuntu1) trusty; urgency=medium
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 19 Mar 2014 10:36:45 +0000
+
+kalzium (4:4.12.3-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 04 Mar 2014 20:29:28 +0100
+
+kalzium (4:4.12.2-2) unstable; urgency=medium
+
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 28 Apr 2014 12:24:03 +0200
+
+kalzium (4:4.12.2-1) experimental; urgency=medium
+
+  * Enable build failures on missing symbols.
+  * Do not disable an empty test set.
+  * Bump Standards-Version to 3.9.5, no changes needed.
+  * New upstream release.
+  * Bump kde-sc-dev-latest build dependency.
+  * Update build dependencies.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 10 Feb 2014 11:31:40 +0100
+
+kalzium (4:4.12.2-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 04 Feb 2014 23:38:00 +0000
+
+kalzium (4:4.12.1-0ubuntu1) trusty; urgency=low
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 16 Jan 2014 07:57:28 +0000
+
+kalzium (4:4.12.0-0ubuntu2) trusty; urgency=medium
+
+  * Build with avogadro on arm64
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 29 Dec 2013 20:21:43 +0100
+
+kalzium (4:4.12.0-0ubuntu1) trusty; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Dec 2013 16:26:26 +0000
+
+kalzium (4:4.11.97-0ubuntu1) trusty; urgency=low
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 29 Nov 2013 12:32:41 +0000
+
+kalzium (4:4.11.95-0ubuntu1) trusty; urgency=low
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Mon, 25 Nov 2013 17:44:16 +0100
+
+kalzium (4:4.11.80-0ubuntu1) trusty; urgency=low
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sat, 23 Nov 2013 17:27:33 +0100
+
+kalzium (4:4.11.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update build dependencies.
+  * Switch to eigen3, thanks to Anton Gladky. (Closes: #728324)
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 09 Nov 2013 16:47:31 +0100
+
+kalzium (4:4.11.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * Update build-dependencies.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 07 Oct 2013 16:52:55 +0200
+
+kalzium (4:4.11.2-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 30 Sep 2013 13:58:16 +0100
+
+kalzium (4:4.11.1-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Howard Chan <smartboyhw@gmail.com>  Fri, 06 Sep 2013 22:06:04 +0100
+
+kalzium (4:4.11.0-0ubuntu1) saucy; urgency=low
+
+  [ Howard Chan ]
+  * New upstream release
+  * Removed libboost-python-dev as build-dep
+    due to multiarch problems
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 13 Aug 2013 23:58:27 +0100
+
+kalzium (4:4.10.97-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC 2 release
+  * New upstream RC 2 release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 26 Jul 2013 19:06:05 +0100
+
+kalzium (4:4.10.95-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 19 Jul 2013 12:31:50 +0000
+
+kalzium (4:4.10.90-0ubuntu2) saucy; urgency=low
+
+  * Update debian/kalzium.install.armhf to use usr/lib/libscience.so.4.*
+    instead of usr/lib/libscience.so.4.10.* (as is done in
+    debian/kalzium.install) to fix FTBFS
+
+ -- Scott Kitterman <scott@kitterman.com>  Sat, 29 Jun 2013 00:48:53 -0400
+
+kalzium (4:4.10.90-0ubuntu1) saucy; urgency=low
+
+  * New upstream bet release
+
+ -- Michał Zając <quintasan@kubuntu.org>  Fri, 28 Jun 2013 17:59:38 +0100
+
+kalzium (4:4.10.80-0ubuntu1) saucy; urgency=low
+
+  [ Rohan Garg ]
+  * New upstream release
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 21 Jun 2013 00:47:13 +0100
+
+kalzium (4:4.10.5-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 12 Jul 2013 16:43:11 +0200
+
+kalzium (4:4.10.4-1) experimental; urgency=low
+
+  * New upstream release.
+  * Add libsm-dev as a build-dep.
+  * Update vcs fields.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 14 Jun 2013 14:31:16 +0200
+
+kalzium (4:4.10.4-0ubuntu1) saucy-proposed; urgency=low
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 06 Jun 2013 23:36:16 +0100
+
+kalzium (4:4.10.3-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+  * Merge with Debian, remaining change:
+   - build-dep on avogado only on non-arm
+   - add kalzium.install.armhf
+   - replace/break libcompoundviewer4
+  * Make chemical-mime-data a recommends not a suggests
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 23 May 2013 11:04:27 +0000
+
+kalzium (4:4.10.2-2) experimental; urgency=low
+
+  [ Pino Toscano ]
+  * Suggest chemical-mime-data in kalzium for the chemical MIME types.
+
+  [ Maximiliano Curia ]
+  * Add a watch file.
+  * Update copyright file.
+  * Update kalzium.install file.
+  * Bump debhelper b-d to 9.
+  * Reshuffle b-d to reduce resolver tries.
+  * Bump Standards-Version to 3.9.4, no further changes needed.
+  * Add myself to the uploaders list.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 03 May 2013 22:18:47 +0200
+
+kalzium (4:4.10.2-1) experimental; urgency=low
+
+  * New upstream release
+  * Update uploaders
+  * Update install-files
+  * Bump build-deps
+
+ -- Sune Vuorela <sune@debian.org>  Sat, 06 Apr 2013 11:56:10 +0000
+
+kalzium (4:4.10.2-0ubuntu1) raring; urgency=low
+
+  * New upstream bugfix release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 31 Mar 2013 14:36:54 +0200
+
+kalzium (4:4.10.1-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream bugfix release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 05 Mar 2013 15:13:43 +0000
+
+kalzium (4:4.10.0-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 06 Feb 2013 11:31:37 +0000
+
+kalzium (4:4.9.98-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream release candidate
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 18 Jan 2013 14:57:39 +0000
+
+kalzium (4:4.9.97-0ubuntu1) raring; urgency=low
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 03 Jan 2013 22:24:41 +0100
+
+kalzium (4:4.9.95-0ubuntu1) raring; urgency=low
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 18 Dec 2012 23:16:37 +0000
+
+kalzium (4:4.9.90-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 07 Dec 2012 17:36:45 +0000
+
+kalzium (4:4.9.80-0ubuntu2) raring; urgency=low
+
+  * Update kalzium.install.armhf for new so version
+  * Remove obsolete kalzium.install.armel
+
+ -- Scott Kitterman <scott@kitterman.com>  Thu, 22 Nov 2012 03:46:57 -0500
+
+kalzium (4:4.9.80-0ubuntu1) raring; urgency=low
+
+  * New upstream beta release
+  * Add build-dep on chemical-mime-data
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 19 Nov 2012 15:44:11 +0000
+
+kalzium (4:4.9.3-0ubuntu1) raring; urgency=low
+
+  * New upstream release (LP: #1074747)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 06 Nov 2012 22:22:34 +0100
+
+kalzium (4:4.9.2-0ubuntu1) quantal-proposed; urgency=low
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 02 Oct 2012 15:11:04 +0100
+
+kalzium (4:4.9.1-0ubuntu1) quantal; urgency=low
+
+  [ Harald Sitter ]
+  * New upstream release
+
+  [ Philip Muškovac ]
+  * Change sonames from 4.9.0 to 4.9.*
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Mon, 10 Sep 2012 18:16:30 +0530
+
+kalzium (4:4.9.0-0ubuntu3) quantal; urgency=low
+
+  * Update library version in kalzium.install.armel and kalzium.install.armhf
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 03 Aug 2012 17:44:05 +0100
+
+kalzium (4:4.9.0-0ubuntu2) quantal; urgency=low
+
+  * Build-dep on kdelibs 4.9.0a, adjust .install files to new library
+    version no
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 02 Aug 2012 11:57:47 +0100
+
+kalzium (4:4.9.0-0ubuntu1) quantal; urgency=low
+
+  * Use direct build-depends versions rather than kde-sc-dev-latest
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 26 Jul 2012 17:01:35 +0100
+
+kalzium (4:4.8.90-0ubuntu1) quantal; urgency=low
+
+  * New upstream beta release.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Mon, 11 Jun 2012 22:03:58 +0200
+
+kalzium (4:4.8.80-0ubuntu1) quantal; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 06 Jun 2012 13:34:47 +0100
+
+kalzium (4:4.8.4-1) unstable; urgency=low
+
+  * New upstream
+    - adapt & refresh patch
+    - adapt install files
+
+ -- Sune Vuorela <sune@debian.org>  Sun, 17 Jun 2012 02:16:35 +0200
+
+kalzium (4:4.8.2-0ubuntu2) quantal; urgency=low
+
+  * Drop libglew1.5-dev from build-depends and instead build-depend on
+    libavogadro-dev >= 1.0.3-1ubuntu5 (LP: #930111)
+  * Switch libboost-python build-dep to 1.49
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 20 May 2012 12:33:02 +0200
+
+kalzium (4:4.8.2-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 01 Apr 2012 22:15:55 +0200
+
+kalzium (4:4.8.1-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 04 Mar 2012 20:04:51 +0100
+
+kalzium (4:4.8.0-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 20 Jan 2012 12:10:26 +0000
+
+kalzium (4:4.7.97-0ubuntu1) precise; urgency=low
+
+  * New upstream release candidate
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 05 Jan 2012 12:18:24 +0000
+
+kalzium (4:4.7.95-0ubuntu1) precise; urgency=low
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sat, 24 Dec 2011 19:00:53 +0100
+
+kalzium (4:4.7.90-0ubuntu2) precise; urgency=low
+
+  * Update libavogadro-dev to only be used on [i386 amd64 powerpc] so kalzium
+    can be built on on armhf
+  * Update SO version used in kalzium.install.armel
+  * Copy kalzium.install.armel as kalzium.install.armhf so the package
+    installs the correct files for that architecture as well
+  * Update Ubuntu Vcs-* headers
+
+ -- Scott Kitterman <scott@kitterman.com>  Wed, 21 Dec 2011 21:41:38 -0500
+
+kalzium (4:4.7.90-0ubuntu1) precise; urgency=low
+
+  * new upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 15 Dec 2011 14:17:55 +0000
+
+kalzium (4:4.7.4-2) unstable; urgency=low
+
+  * Team upload. Upload to unstable.
+
+ -- Pino Toscano <pino@debian.org>  Wed, 07 Mar 2012 10:43:29 +0100
+
+kalzium (4:4.7.4-1) experimental; urgency=low
+
+  * New upstream release.
+
+  [ José Manuel Santamaría Lema ]
+  * Bump kde-sc-dev-latest build dependency to 4:4.7.4.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Dec 2011 01:39:23 +0100
+
+kalzium (4:4.7.3-0ubuntu2) precise; urgency=low
+
+  * Add kalzium.install.armel without libcompoundviewer.so as it's not built
+    on armel.
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Sun, 27 Nov 2011 12:21:46 +0100
+
+kalzium (4:4.7.3-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+  * Merge with debian
+   - Changes adopted from Debian:
+    - drop libscience4 and libcompoundviewer4
+    - add replaces/breaks for above to kalzium
+    - drop kalzium-dev
+   - Remaining changes to Debian
+    - don't build-dep on avogadro for armel
+    - use versioned package for boost and glew build-deps
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 23 Nov 2011 23:46:56 +0000
+
+kalzium (4:4.7.2-1) experimental; urgency=low
+
+  [ Eshat Cakar ]
+  [ José Manuel Santamaría Lema ]
+  [ Pino Toscano ]
+  * Initial release. Start from the Ubuntu packaging, thanks!
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2011 10:45:14 -0300
+
+kalzium (4:4.7.2-0r2) raring; urgency=low
+
+  [ Eshat Cakar ]
+  [ José Manuel Santamaría Lema ]
+  [ Pino Toscano ]
+  * Initial release. Start from the Ubuntu packaging, thanks!
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 26 Oct 2011 21:48:44 +0200
+
+kalzium (4:4.7.2-0ubuntu1) oneiric-proposed; urgency=low
+
+  * New upstream release (LP: #872506)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Mon, 03 Oct 2011 22:35:57 +0200
+
+kalzium (4:4.7.1-0ubuntu3) oneiric; urgency=low
+
+  * kalzium-dev should only depend on libcompoundviewer4 on i386, amd64, and
+    powerpc since libcompoundviewer4 doesn't exist on armel
+
+ -- Scott Kitterman <scott@kitterman.com>  Mon, 19 Sep 2011 17:56:39 -0400
+
+kalzium (4:4.7.1-0ubuntu2) oneiric; urgency=low
+
+  * No-change rebuild so translations aren't stripped from .desktop
+    files anymore.
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Thu, 15 Sep 2011 23:12:30 +0200
+
+kalzium (4:4.7.1-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Kolberg <bulldog98@kubuntu-de.org>  Fri, 09 Sep 2011 09:06:54 -0400
+
+kalzium (4:4.7.0-0ubuntu4) oneiric; urgency=low
+
+  * Change libscience4 depends on libkdeedu-data to source:Upstream-Version to
+    fix installability
+
+ -- Scott Kitterman <scott@kitterman.com>  Mon, 29 Aug 2011 10:21:05 -0400
+
+kalzium (4:4.7.0-0ubuntu3) oneiric; urgency=low
+
+  * No-change rebuild against fixed avogadro to resolve FTBFS.
+    (LP: #829447)
+
+ -- Daniel T Chen <crimsun@ubuntu.com>  Sun, 28 Aug 2011 15:06:14 -0400
+
+kalzium (4:4.7.0-0ubuntu2) oneiric; urgency=low
+
+  * Bump breaks/replaces on libkdeedu4 to catch 4.6.5 packages
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 28 Jul 2011 18:07:10 +0200
+
+kalzium (4:4.7.0-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sat, 23 Jul 2011 00:04:32 +0200
+
+kalzium (4:4.6.90+repack-0ubuntu2) oneiric; urgency=low
+
+  * debian/control:
+    - libcompoundviewer4 breaks/replaces kalzium << 4:4.6.80
+    - don't build libcompoundviewer4 on armel
+  * remove kalzium.install.armel and add kalzium-dev.install.armel since the
+    relevant files moved.
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 10 Jul 2011 01:06:39 +0200
+
+kalzium (4:4.6.90+repack-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release candidate
+  * Repack source to include COPYING files
+  * Update packaging for split source
+    - add new package for libcompoundviewer and kalzium-dev
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 03 Jul 2011 12:28:58 +0200

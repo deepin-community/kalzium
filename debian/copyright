@@ -1,0 +1,161 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: kalzium
+Upstream-Contact: Ian Monroe <ian.monroe@gmail.com>
+                  Jeremy Paul Whiting <jpwhiting@kde.org>
+Source: http://www.kde.org/download/
+Comment: This package was developed for Ubuntu by the Kubuntu Developers and
+ modified to be included in Debian. See below the copyright holders for debian/*
+ files.
+
+Files: *
+Copyright: 2003-2011 by Carsten Niehaus <cniehaus@kde.org>
+           2009-2011, Etienne Rebetez <etienne.rebetez@oberwallis.ch>
+           2008, Frederik Gladhorn <frederik.gladhorn@kdemail.net>
+           2006, Georges Khaznadar
+           2007, Ian Monroe <ian@monroe.nu>
+           2005, Inge Wallin <inge@lysator.liu.se>
+           2006-2007, Jerome Pansanel <j.pansanel@pansanel.net>
+           2007, Johannes Simon
+           2009, Kashyap R Puranik <kashthealien@gmail.com>
+           2010, Luca Tringali, TRINGALINVENT@libero.it
+           2007-2009, Marcus D. Hanwell <marcus@cryos.org>
+           2005-2007, Pino Toscano <pino@kde.org>
+           2004-2006, Thomas Nagy <tnagy2^8@yahoo.fr>
+License: GPL-2+
+
+Files: debian/*
+Copyright: 2011, Kubuntu Developers <kubuntu-devel@lists.launchpad.net>
+           2011, Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+License: GPL-2+
+
+Files: compoundviewer/libkdeedu_compoundviewer_export.h
+       libscience/libkdeedu_science_export.h
+Copyright: 2007, David Faure <faure@kde.org>
+License: LGPL-2+
+
+Files: doc/*
+Copyright: 2001-2008, Carsten Niehaus <cniehaus@kde.org>
+           2005, Anne-Marie Mahfouf
+License: GFDL-1.2+
+
+Files: cmake/modules/*
+Copyright: 2006, 2007 Montel Laurent <montel@kde.org>
+           2008, 2009 Gael Guennebaud <g.gael@free.fr>
+           2006, 2007, Carsten Niehaus <cniehaus@gmx.de>
+           2006, 2007, 2009, Pino Toscano <pino@kde.org>
+           2008, Albert Astals Cid <aacid@kde.org>
+           2008 Marcus D. Hanwell <marcus@cryos.org>
+License: BSD-3-clause
+
+Files: src/psetable/*
+Copyright: 2003-2006, Carsten Niehaus <cniehaus@kde.org>
+           2010-2011, Etienne Rebetez <etienne.rebetez@oberwallis.ch>
+           2010, Konstantin Tokarev
+           2007-2009, Marcus D. Hanwell <marcus@cryos.org>
+           2005-2006, Pino Toscano <toscano.pino@tiscali.it>
+License: LGPL-2.1+
+
+Files: src/psetable/statemachine.h
+Copyright: 2010 Nokia Corporation and/or its subsidiary(-ies).
+License: BSD-3-clause
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: GFDL-1.2+
+ Permission is granted to copy, distribute and/or modify this document
+ under the terms of the GNU Free Documentation License, Version 1.2
+ or any later version published by the Free Software Foundation;
+ with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+ A copy of the license is included in the section entitled "GNU
+ Free Documentation License".
+ .
+ On Debian systems, the full text of the GNU Free Documentation
+ License version 1.2 can be found in the file
+ `/usr/share/common-licenses/GFDL-1.2'.
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public License
+ along with this library; see the file COPYING.LIB.  If not, write to
+ the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the full text of the GNU Lesser General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/LGPL-2'.
+
+License: LGPL-2.1+
+ This file is part of the Avogadro molecular editor project.
+ For more information, see <http://avogadro.openmolecules.net/>
+ .
+ Kalzium is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as published by
+ the Free Software Foundation; either version 2.1 of the License, or
+ (at your option) any later version.
+ .
+ Avogadro is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ 02110-1301, USA.
+ .
+ On Debian systems, the full text of the GNU Lesser General Public
+ License version 2.1 can be found in the file
+ `/usr/share/common-licenses/LGPL-2.1'.
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ * Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in
+ the documentation and/or other materials provided with the
+ distribution.
+ * Neither the name of Nokia Corporation and its Subsidiary(-ies) nor
+ the names of its contributors may be used to endorse or promote
+ products derived from this software without specific prior written
+ permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

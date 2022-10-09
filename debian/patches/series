@@ -1,0 +1,3 @@
+no_install_rpath_use_link_path.diff
+avoid_nameclash.patch
+869869.patch

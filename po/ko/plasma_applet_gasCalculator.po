@@ -1,0 +1,263 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Shinjo Park <kde@peremen.name>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:01+0200\n"
+"PO-Revision-Date: 2011-01-03 19:42+0900\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: gasCalculator.cpp:98
+#, kde-format
+msgid "Gas Calculator"
+msgstr "기체 계산기"
+
+#: gasCalculator.cpp:108
+#, kde-format
+msgid "Calculation Mode:"
+msgstr "계산 모드:"
+
+#: gasCalculator.cpp:113
+#, kde-format
+msgid "Moles / Mass"
+msgstr "몰/질량"
+
+#: gasCalculator.cpp:114
+#, kde-format
+msgid "Pressure"
+msgstr "기압"
+
+#: gasCalculator.cpp:115
+#, kde-format
+msgid "Temperature"
+msgstr "온도"
+
+#: gasCalculator.cpp:116
+#, kde-format
+msgid "Volume"
+msgstr "부피"
+
+#: gasCalculator.cpp:126
+#, kde-format
+msgid "Molar Mass of Gas:"
+msgstr "기체의 몰 질량:"
+
+#: gasCalculator.cpp:136
+#, kde-format
+msgid "u (mass)"
+msgstr "u (질량)"
+
+#: gasCalculator.cpp:146
+#, kde-format
+msgid "Number of moles:"
+msgstr "몰 수:"
+
+#: gasCalculator.cpp:161
+#, kde-format
+msgid "Mass of the gas:"
+msgstr "기체의 질량:"
+
+#: gasCalculator.cpp:172
+#, kde-format
+msgid "grams"
+msgstr "그램"
+
+#: gasCalculator.cpp:173
+#, kde-format
+msgid "tons"
+msgstr "톤"
+
+#: gasCalculator.cpp:174
+#, kde-format
+msgid "carats"
+msgstr "캐럿"
+
+#: gasCalculator.cpp:175
+#, kde-format
+msgid "pounds"
+msgstr "파운드"
+
+#: gasCalculator.cpp:176
+#, kde-format
+msgid "ounces"
+msgstr "온스"
+
+#: gasCalculator.cpp:177
+#, kde-format
+msgid "troy ounces"
+msgstr "트로이 온스"
+
+#: gasCalculator.cpp:189
+#, kde-format
+msgid "Pressure of the Gas:"
+msgstr "기체의 압력:"
+
+#: gasCalculator.cpp:200
+#, kde-format
+msgid "atmospheres"
+msgstr "기압"
+
+#: gasCalculator.cpp:201
+#, kde-format
+msgid "pascal"
+msgstr "파스칼"
+
+#: gasCalculator.cpp:202
+#, kde-format
+msgid "bars"
+msgstr "바"
+
+#: gasCalculator.cpp:203
+#, kde-format
+msgid "millibars"
+msgstr "밀리바"
+
+#: gasCalculator.cpp:204
+#, kde-format
+msgid "decibars"
+msgstr "데시바"
+
+#: gasCalculator.cpp:205
+#, kde-format
+msgid "torrs"
+msgstr "토르"
+
+#: gasCalculator.cpp:206
+#, kde-format
+msgid "inches of mercury"
+msgstr "mmHg"
+
+#: gasCalculator.cpp:218
+#, kde-format
+msgid "Temperature:"
+msgstr "온도:"
+
+#: gasCalculator.cpp:229
+#, kde-format
+msgid "kelvins"
+msgstr "K"
+
+#: gasCalculator.cpp:230
+#, kde-format
+msgid "celsius"
+msgstr "°C"
+
+#: gasCalculator.cpp:231
+#, kde-format
+msgid "fahrenheit"
+msgstr "°F"
+
+#: gasCalculator.cpp:232
+#, kde-format
+msgid "delisles"
+msgstr "°D"
+
+#: gasCalculator.cpp:233
+#, kde-format
+msgid "réaumurs"
+msgstr "°Ré"
+
+#: gasCalculator.cpp:245
+#, kde-format
+msgid "Volume of the gas:"
+msgstr "기체의 부피"
+
+#: gasCalculator.cpp:256
+#, kde-format
+msgid "liter"
+msgstr "리터"
+
+#: gasCalculator.cpp:257 gasCalculator.cpp:310
+#, kde-format
+msgid "cubic feet"
+msgstr "세제곱피트"
+
+#: gasCalculator.cpp:258
+#, kde-format
+msgid "cubic inch"
+msgstr "세제곱인치"
+
+#: gasCalculator.cpp:259
+#, kde-format
+msgid "fluid ounce"
+msgstr "액체 온스"
+
+#: gasCalculator.cpp:260 gasCalculator.cpp:313
+#, kde-format
+msgid "cups"
+msgstr "컵"
+
+#: gasCalculator.cpp:261 gasCalculator.cpp:312
+#, kde-format
+msgid "gallons"
+msgstr "갤런"
+
+#: gasCalculator.cpp:262
+#, kde-format
+msgid "pints"
+msgstr "파인트"
+
+#: gasCalculator.cpp:274
+#, kde-format
+msgid "Van der Waals constant 'a':"
+msgstr "반데르발스 상수 'a':"
+
+#: gasCalculator.cpp:285
+#, kde-format
+msgid "liter^2 atmosphere/mol^2"
+msgstr "liter^2 atmosphere/mol^2"
+
+#: gasCalculator.cpp:297
+#, kde-format
+msgid "Van der Waals constant 'b':"
+msgstr "반데르발스 상수 'b':"
+
+#: gasCalculator.cpp:308
+#, kde-format
+msgid "liters"
+msgstr "리터"
+
+#: gasCalculator.cpp:309
+#, kde-format
+msgid "cubic meters"
+msgstr "세제곱미터"
+
+#: gasCalculator.cpp:311
+#, kde-format
+msgid "cubic inches"
+msgstr "세제곱인치"
+
+#: gasCalculator.cpp:327
+#, kde-format
+msgid "Reset"
+msgstr "초기화"
+
+#: gasCalculator.cpp:645
+#, kde-format
+msgid "Volume cannot be zero, please enter a valid value."
+msgstr "부피는 0보다 커야 합니다. 올바른 값을 입력하십시오."
+
+#: gasCalculator.cpp:648
+#, kde-format
+msgid "The molar mass cannot be zero, please enter a non-zero value."
+msgstr "몰 질량은 0보다 커야 합니다. 0이 아닌 값을 입력하십시오."
+
+#: gasCalculator.cpp:658
+#, kde-format
+msgid "General"
+msgstr "일반"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ideal)
+#: gasCalculatorConfig.ui:17
+#, kde-format
+msgid "Assume Gas is ideal (Do not show Van der Waals coefficients)"
+msgstr "이상 기체로 가정하기 (반데르발스 상수를 표시하지 않음)"

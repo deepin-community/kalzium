@@ -1,0 +1,85 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:01+0200\n"
+"PO-Revision-Date: 2011-02-26 22:00+0100\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: Molmasscalculator.cpp:84
+#, kde-format
+msgid "Dataengine \"kalzium\" not found"
+msgstr "Gegevens-engine \"kalzium\" is niet gevonden"
+
+#: Molmasscalculator.cpp:127
+#, kde-format
+msgid "Invalid Molecule"
+msgstr "Ongeldige molecuul"
+
+#: Molmasscalculator.cpp:155
+#, kde-format
+msgid "Molecule:"
+msgstr "Molecuul:"
+
+#: Molmasscalculator.cpp:166
+#, kde-format
+msgid "C2H5OH"
+msgstr "C2H5OH"
+
+#: Molmasscalculator.cpp:240
+#, kde-format
+msgid "General"
+msgstr "Algemeen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, copyToCliboard)
+#: Molmassconfig.ui:26
+#, kde-format
+msgid "Copy Result to Clipboard"
+msgstr "Resultaat naar klembord kopiëren"
+
+#. i18n: ectx: property (title), widget (QGroupBox, showPeriodic)
+#: Molmassconfig.ui:33
+#, kde-format
+msgid "Show Periodic Table"
+msgstr "Periodiek systeem tonen"
+
+#: Periodictable.cpp:105
+#, kde-format
+msgid "Electronegativity:"
+msgstr "Elektronegativiteit:"
+
+#: Periodictable.cpp:106
+#, kde-format
+msgid "Atomic mass:"
+msgstr "Atoommassa:"
+
+#: Periodictable.cpp:106
+#, kde-format
+msgid "u"
+msgstr "u"
+
+#: Periodictable.cpp:107
+#, kde-format
+msgid "Boiling point:"
+msgstr "Kookpunt:"
+
+#: Periodictable.cpp:107 Periodictable.cpp:108
+#, kde-format
+msgid "K"
+msgstr "K"
+
+#: Periodictable.cpp:108
+#, kde-format
+msgid "Melting point:"
+msgstr "Smeltpunt:"

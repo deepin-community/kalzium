@@ -1,0 +1,66 @@
+Source: kalzium
+Section: kde
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Sune Vuorela <sune@debian.org>,
+           Norbert Preining <norbert@preining.info>,
+Build-Depends: chemical-mime-data,
+               cmake (>= 3.5.0~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.57.0~),
+               gettext,
+               libavogadro-dev,
+               libeigen3-dev (>> 2.0.3),
+               libfacile-ocaml-dev,
+               libkf5archive-dev (>= 5.57.0~),
+               libkf5config-dev (>= 5.57.0~),
+               libkf5coreaddons-dev (>= 5.57.0~),
+               libkf5doctools-dev (>= 5.57.0~),
+               libkf5i18n-dev (>= 5.57.0~),
+               libkf5newstuff-dev (>= 5.57.0~),
+               libkf5parts-dev (>= 5.57.0~),
+               libkf5plotting-dev (>= 5.57.0~),
+               libkf5solid-dev (>= 5.57.0~),
+               libkf5unitconversion-dev (>= 5.57.0~),
+               libkf5widgetsaddons-dev (>= 5.57.0~),
+               libopenbabel-dev (>= 3.1.1+dfsg-4),
+               libopengl-dev,
+               libqt5opengl5-dev (>= 5.9.0~),
+               libqt5svg5-dev (>= 5.9.0~),
+               pkg-config,
+               pkg-kde-tools (>= 0.14),
+               qtbase5-dev (>= 5.9.0~),
+               qtscript5-dev (>= 5.9.0~),
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Homepage: http://edu.kde.org/
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/kalzium
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/kalzium.git
+
+Package: kalzium
+Architecture: any
+Section: science
+Depends: kalzium-data (>= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: libkdeedu4 (<< 4:4.6.2), libscience4
+Replaces: libkdeedu4 (<< 4:4.6.2), libscience4
+Suggests: chemical-mime-data, khelpcenter
+Description: periodic table and chemistry tools
+ Kalzium is a full-featured chemistry application, including a
+ Periodic Table of Elements, chemical reference, chemical equation solver, and
+ 3D molecule viewer.
+ .
+ This package is part of the KDE education module.
+
+Package: kalzium-data
+Architecture: all
+Section: science
+Depends: ${misc:Depends}
+Breaks: ${kde-l10n:all}
+Replaces: ${kde-l10n:all}
+Description: data files for Kalzium
+ This package contains architecture-independent data files for Kalzium, the
+ KDE periodic table application.
+ .
+ This package is part of the KDE education module.

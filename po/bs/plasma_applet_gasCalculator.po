@@ -1,0 +1,268 @@
+# Bosnian translation for kdeedu
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the kdeedu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeedu\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:01+0200\n"
+"PO-Revision-Date: 2012-09-03 13:51+0000\n"
+"Last-Translator: Samir Ribić <Unknown>\n"
+"Language-Team: Bosnian <bs@li.org>\n"
+"Language: bs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-10-21 06:51+0000\n"
+"X-Generator: Launchpad (build 17203)\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: gasCalculator.cpp:98
+#, kde-format
+msgid "Gas Calculator"
+msgstr "Gasni kalkulator"
+
+#: gasCalculator.cpp:108
+#, kde-format
+msgid "Calculation Mode:"
+msgstr "Režim računa:"
+
+#: gasCalculator.cpp:113
+#, kde-format
+msgid "Moles / Mass"
+msgstr "Molovi / masa"
+
+#: gasCalculator.cpp:114
+#, kde-format
+msgid "Pressure"
+msgstr "Pritisak"
+
+#: gasCalculator.cpp:115
+#, kde-format
+msgid "Temperature"
+msgstr "Temperatura"
+
+#: gasCalculator.cpp:116
+#, kde-format
+msgid "Volume"
+msgstr "Volumen"
+
+#: gasCalculator.cpp:126
+#, kde-format
+msgid "Molar Mass of Gas:"
+msgstr "Molarna masa plina:"
+
+#: gasCalculator.cpp:136
+#, kde-format
+msgid "u (mass)"
+msgstr "u (masa)"
+
+#: gasCalculator.cpp:146
+#, kde-format
+msgid "Number of moles:"
+msgstr "Broj molova:"
+
+#: gasCalculator.cpp:161
+#, kde-format
+msgid "Mass of the gas:"
+msgstr "Masa plina:"
+
+#: gasCalculator.cpp:172
+#, kde-format
+msgid "grams"
+msgstr "grama"
+
+#: gasCalculator.cpp:173
+#, kde-format
+msgid "tons"
+msgstr "tona"
+
+#: gasCalculator.cpp:174
+#, kde-format
+msgid "carats"
+msgstr "karata"
+
+#: gasCalculator.cpp:175
+#, kde-format
+msgid "pounds"
+msgstr "funti"
+
+#: gasCalculator.cpp:176
+#, kde-format
+msgid "ounces"
+msgstr "britanskih unci"
+
+#: gasCalculator.cpp:177
+#, kde-format
+msgid "troy ounces"
+msgstr "međunarodnih unci"
+
+#: gasCalculator.cpp:189
+#, kde-format
+msgid "Pressure of the Gas:"
+msgstr "Pritisak gasa:"
+
+#: gasCalculator.cpp:200
+#, kde-format
+msgid "atmospheres"
+msgstr "atmosfera"
+
+#: gasCalculator.cpp:201
+#, kde-format
+msgid "pascal"
+msgstr "paskala"
+
+#: gasCalculator.cpp:202
+#, kde-format
+msgid "bars"
+msgstr "bara"
+
+#: gasCalculator.cpp:203
+#, kde-format
+msgid "millibars"
+msgstr "milibara"
+
+#: gasCalculator.cpp:204
+#, kde-format
+msgid "decibars"
+msgstr "decibara"
+
+#: gasCalculator.cpp:205
+#, kde-format
+msgid "torrs"
+msgstr "torra"
+
+#: gasCalculator.cpp:206
+#, kde-format
+msgid "inches of mercury"
+msgstr "inča živinog stuba"
+
+#: gasCalculator.cpp:218
+#, kde-format
+msgid "Temperature:"
+msgstr "Temperatura:"
+
+#: gasCalculator.cpp:229
+#, kde-format
+msgid "kelvins"
+msgstr "kelvina"
+
+#: gasCalculator.cpp:230
+#, kde-format
+msgid "celsius"
+msgstr "celzijusa"
+
+#: gasCalculator.cpp:231
+#, kde-format
+msgid "fahrenheit"
+msgstr "fahrenheita"
+
+#: gasCalculator.cpp:232
+#, kde-format
+msgid "delisles"
+msgstr "delislea"
+
+#: gasCalculator.cpp:233
+#, kde-format
+msgid "réaumurs"
+msgstr "réaumura"
+
+#: gasCalculator.cpp:245
+#, kde-format
+msgid "Volume of the gas:"
+msgstr "Volumen plina:"
+
+#: gasCalculator.cpp:256
+#, kde-format
+msgid "liter"
+msgstr "litara"
+
+#: gasCalculator.cpp:257 gasCalculator.cpp:310
+#, kde-format
+msgid "cubic feet"
+msgstr "kubniha stopa"
+
+#: gasCalculator.cpp:258
+#, kde-format
+msgid "cubic inch"
+msgstr "kubnih inč"
+
+#: gasCalculator.cpp:259
+#, kde-format
+msgid "fluid ounce"
+msgstr "tekućih unci"
+
+#: gasCalculator.cpp:260 gasCalculator.cpp:313
+#, kde-format
+msgid "cups"
+msgstr "šolja"
+
+#: gasCalculator.cpp:261 gasCalculator.cpp:312
+#, kde-format
+msgid "gallons"
+msgstr "galona"
+
+#: gasCalculator.cpp:262
+#, kde-format
+msgid "pints"
+msgstr "pinti"
+
+#: gasCalculator.cpp:274
+#, kde-format
+msgid "Van der Waals constant 'a':"
+msgstr "Van der Waalsova konstanta 'a':"
+
+#: gasCalculator.cpp:285
+#, kde-format
+msgid "liter^2 atmosphere/mol^2"
+msgstr "litar^2 atmosfera/mol^2"
+
+#: gasCalculator.cpp:297
+#, kde-format
+msgid "Van der Waals constant 'b':"
+msgstr "Van der Waalsova konstanta 'b':"
+
+#: gasCalculator.cpp:308
+#, kde-format
+msgid "liters"
+msgstr "litara"
+
+#: gasCalculator.cpp:309
+#, kde-format
+msgid "cubic meters"
+msgstr "kubnih metara"
+
+#: gasCalculator.cpp:311
+#, kde-format
+msgid "cubic inches"
+msgstr "kubnih inča"
+
+#: gasCalculator.cpp:327
+#, kde-format
+msgid "Reset"
+msgstr "Resetuj"
+
+#: gasCalculator.cpp:645
+#, kde-format
+msgid "Volume cannot be zero, please enter a valid value."
+msgstr "Zapremina ne može biti nula. Unesite ispravnu vrijednost."
+
+#: gasCalculator.cpp:648
+#, kde-format
+msgid "The molar mass cannot be zero, please enter a non-zero value."
+msgstr "Molarna masa ne može biti nula. Unesite vrijednost različitu od nule."
+
+#: gasCalculator.cpp:658
+#, kde-format
+msgid "General"
+msgstr "Opšte"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ideal)
+#: gasCalculatorConfig.ui:17
+#, kde-format
+msgid "Assume Gas is ideal (Do not show Van der Waals coefficients)"
+msgstr ""
+"Pretpostavi da je plin idealan (ne prikazuj Van der Waalsove koeficijente)"

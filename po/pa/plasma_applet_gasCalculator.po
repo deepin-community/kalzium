@@ -1,0 +1,264 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# A S Alam <aalam@users.sf.net>, 2009, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:01+0200\n"
+"PO-Revision-Date: 2021-01-23 15:44-0800\n"
+"Last-Translator: A S Alam <aalam.yellow@gmail.com>\n"
+"Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.08.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: gasCalculator.cpp:98
+#, kde-format
+msgid "Gas Calculator"
+msgstr "ਗੈਸ ਕੈਲਕੂਲੇਟਰ"
+
+#: gasCalculator.cpp:108
+#, kde-format
+msgid "Calculation Mode:"
+msgstr "ਗਿਣਤੀ ਮੋਡ:"
+
+#: gasCalculator.cpp:113
+#, kde-format
+msgid "Moles / Mass"
+msgstr "ਮੋਲ / ਭਾਰ"
+
+#: gasCalculator.cpp:114
+#, kde-format
+msgid "Pressure"
+msgstr "ਦਬਾਉ"
+
+#: gasCalculator.cpp:115
+#, kde-format
+msgid "Temperature"
+msgstr "ਤਾਪਮਾਨ"
+
+#: gasCalculator.cpp:116
+#, kde-format
+msgid "Volume"
+msgstr "ਵਾਲੀਅਮ"
+
+#: gasCalculator.cpp:126
+#, kde-format
+msgid "Molar Mass of Gas:"
+msgstr "ਗੈਸ ਦਾ ਮੋਲਰ ਭਾਰ:"
+
+#: gasCalculator.cpp:136
+#, kde-format
+msgid "u (mass)"
+msgstr "u (ਭਾਰ)"
+
+#: gasCalculator.cpp:146
+#, kde-format
+msgid "Number of moles:"
+msgstr "ਮੋਲਾਂ ਦੀ ਗਿਣਤੀ:"
+
+#: gasCalculator.cpp:161
+#, kde-format
+msgid "Mass of the gas:"
+msgstr "ਗੈਸ ਦਾ ਭਾਰ:"
+
+#: gasCalculator.cpp:172
+#, kde-format
+msgid "grams"
+msgstr "ਗਰਾਮ"
+
+#: gasCalculator.cpp:173
+#, kde-format
+msgid "tons"
+msgstr "ਟਨ"
+
+#: gasCalculator.cpp:174
+#, kde-format
+msgid "carats"
+msgstr "ਕੈਰਟ"
+
+#: gasCalculator.cpp:175
+#, kde-format
+msgid "pounds"
+msgstr "ਪਾਊਂਡ"
+
+#: gasCalculator.cpp:176
+#, kde-format
+msgid "ounces"
+msgstr "ਔਂਸ"
+
+#: gasCalculator.cpp:177
+#, kde-format
+msgid "troy ounces"
+msgstr " ਟਰੌਏ ਔਂਸ"
+
+#: gasCalculator.cpp:189
+#, kde-format
+msgid "Pressure of the Gas:"
+msgstr "ਗੈਸ ਦਾ ਦਬਾਉ:"
+
+#: gasCalculator.cpp:200
+#, kde-format
+msgid "atmospheres"
+msgstr "ਆਟੋਮੋਸਫੀਅਰ"
+
+#: gasCalculator.cpp:201
+#, kde-format
+msgid "pascal"
+msgstr "ਪਾਸਕਲ"
+
+#: gasCalculator.cpp:202
+#, kde-format
+msgid "bars"
+msgstr "ਬਾਰ"
+
+#: gasCalculator.cpp:203
+#, kde-format
+msgid "millibars"
+msgstr "ਮਿਲੀਬਾਰ"
+
+#: gasCalculator.cpp:204
+#, kde-format
+msgid "decibars"
+msgstr "ਡੈਸੀਬਾਰ"
+
+#: gasCalculator.cpp:205
+#, kde-format
+msgid "torrs"
+msgstr "ਟੌਰਸ"
+
+#: gasCalculator.cpp:206
+#, kde-format
+msgid "inches of mercury"
+msgstr "ਪਾਰੇ ਦੇ ਇੰਚ"
+
+#: gasCalculator.cpp:218
+#, kde-format
+msgid "Temperature:"
+msgstr "ਤਾਪਮਾਨ:"
+
+#: gasCalculator.cpp:229
+#, kde-format
+msgid "kelvins"
+msgstr "ਕੈਲਵਿਨ"
+
+#: gasCalculator.cpp:230
+#, kde-format
+msgid "celsius"
+msgstr "ਸੈਲਸੀਅਸ"
+
+#: gasCalculator.cpp:231
+#, kde-format
+msgid "fahrenheit"
+msgstr "ਫਾਰਨਹੀਟ"
+
+#: gasCalculator.cpp:232
+#, kde-format
+msgid "delisles"
+msgstr ""
+
+#: gasCalculator.cpp:233
+#, kde-format
+msgid "réaumurs"
+msgstr ""
+
+#: gasCalculator.cpp:245
+#, kde-format
+msgid "Volume of the gas:"
+msgstr "ਗੈਸ ਦਾ ਵਾਲੀਅਮ:"
+
+#: gasCalculator.cpp:256
+#, kde-format
+msgid "liter"
+msgstr "ਲਿਟਰ"
+
+#: gasCalculator.cpp:257 gasCalculator.cpp:310
+#, kde-format
+msgid "cubic feet"
+msgstr "ਘਣ ਫੁੱਟ"
+
+#: gasCalculator.cpp:258
+#, kde-format
+msgid "cubic inch"
+msgstr "ਘਣ ਇੰਚ"
+
+#: gasCalculator.cpp:259
+#, kde-format
+msgid "fluid ounce"
+msgstr "ਤਰਲ ਔਂਸ"
+
+#: gasCalculator.cpp:260 gasCalculator.cpp:313
+#, kde-format
+msgid "cups"
+msgstr "ਕੱਪ"
+
+#: gasCalculator.cpp:261 gasCalculator.cpp:312
+#, kde-format
+msgid "gallons"
+msgstr "ਗੈਲਨ"
+
+#: gasCalculator.cpp:262
+#, kde-format
+msgid "pints"
+msgstr "ਪਿੰਟਸ"
+
+#: gasCalculator.cpp:274
+#, kde-format
+msgid "Van der Waals constant 'a':"
+msgstr "ਵਾਨ ਡਰ ਵਾਲਸ ਸਥਿਰ ਅੰਕ 'a':"
+
+#: gasCalculator.cpp:285
+#, kde-format
+msgid "liter^2 atmosphere/mol^2"
+msgstr "ਲੀਟਰ^2 atmosphere/mol^2"
+
+#: gasCalculator.cpp:297
+#, kde-format
+msgid "Van der Waals constant 'b':"
+msgstr "ਵਾਨ ਡਰ ਵਾਲਸ ਸਥਿਰ ਅੰਕ 'b':"
+
+#: gasCalculator.cpp:308
+#, kde-format
+msgid "liters"
+msgstr "ਲੀਟਰ"
+
+#: gasCalculator.cpp:309
+#, kde-format
+msgid "cubic meters"
+msgstr "ਘਣ ਮੀਟਰ"
+
+#: gasCalculator.cpp:311
+#, kde-format
+msgid "cubic inches"
+msgstr "ਘਣ ਇੰਚ"
+
+#: gasCalculator.cpp:327
+#, kde-format
+msgid "Reset"
+msgstr "ਰੀ-ਸੈੱਟ"
+
+#: gasCalculator.cpp:645
+#, kde-format
+msgid "Volume cannot be zero, please enter a valid value."
+msgstr "ਵਾਲੀਅਮ ਸਿਫ਼ਰ ਨਹੀਂ ਹੋ ਸਕਦਾ ਹੈ, ਠੀਕ ਮੁੱਲ ਭਰੋ ਜੀ"
+
+#: gasCalculator.cpp:648
+#, kde-format
+msgid "The molar mass cannot be zero, please enter a non-zero value."
+msgstr "ਮੋਲਰ ਮਾਸ ਸਿਫ਼ਰ ਨਹੀਂ ਹੋ ਸਕਦਾ ਹੈ, ਗ਼ੈਰ-ਸਿਫ਼ਰ ਮੁੱਲ ਦਿਉ ਜੀ।"
+
+#: gasCalculator.cpp:658
+#, kde-format
+msgid "General"
+msgstr "ਆਮ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ideal)
+#: gasCalculatorConfig.ui:17
+#, kde-format
+msgid "Assume Gas is ideal (Do not show Van der Waals coefficients)"
+msgstr "ਮੰਨੋ ਕਿ ਗੈਸ ਆਈਡਲ ਹੈ (ਵਾਨ ਡੀਰ ਵਾਲਿਸ ਗੁਣਾਂਕ ਨਾ ਵਰਤੋਂ)"

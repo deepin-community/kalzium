@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+l10npkgs_firstversion_ok := 4:16.04.3-6~
+include /usr/share/pkg-kde-tools/qt-kde-team/2/l10n-packages.mk
+
+%:
+	dh $@ --with kf5
+
+override_dh_auto_install:
+	dh_auto_install
+	# drop translations of plasma-related components, since they are
+	# not ported yet
+	rm -f debian/tmp/usr/share/locale/*/LC_MESSAGES/plasma_*.mo
+	# drop development stuff
+	rm -rf debian/tmp/usr/include/
+	find debian/tmp -name '*.so' -type l -delete
+
+override_dh_gencontrol-indep: l10npkgs_firstversion_ok
+	dh_gencontrol -i
